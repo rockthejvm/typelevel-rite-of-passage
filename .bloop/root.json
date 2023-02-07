@@ -1,0 +1,1345 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root",
+        "directory": "/Users/daniel/dev/rockthejvm/courses/typelevel-project",
+        "workspaceDir": "/Users/daniel/dev/rockthejvm/courses/typelevel-project",
+        "sources": [
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/src/main/scala",
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/src/main/scala-3",
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/src/main/java",
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/target/scala-3.2.1/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.3.14/cats-effect_3-3.3.14.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-dsl_3/0.23.15/http4s-dsl_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-server_3/0.23.15/http4s-ember-server_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-circe_3/0.23.15/http4s-circe_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_3/0.14.1/circe-generic_3-0.14.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-fs2_3/0.14.0/circe-fs2_3-0.14.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-core_3/1.0.0-RC1/doobie-core_3-1.0.0-RC1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-hikari_3/1.0.0-RC1/doobie-hikari_3-1.0.0-RC1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-postgres_3/1.0.0-RC1/doobie-postgres_3-1.0.0-RC1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_3/0.17.1/pureconfig-core_3-0.17.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-slf4j_3/2.4.0/log4cats-slf4j_3-2.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.0/slf4j-simple-2.0.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-http4s_3/0.4.0/tsec-http4s_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.3.14/cats-effect-kernel_3-3.3.14.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.3.14/cats-effect-std_3-3.3.14.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-core_3/0.23.15/http4s-core_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-core_3/0.23.15/http4s-ember-core_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-server_3/0.23.15/http4s-server_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-jawn_3/0.23.15/http4s-jawn_3-0.23.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_3/0.14.2/circe-core_3-0.14.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_3/0.14.2/circe-jawn_3-0.14.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.2.12/fs2-core_3-3.2.12.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_3/1.4.0/jawn-parser_3-1.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-free_3/1.0.0-RC1/doobie-free_3-1.0.0-RC1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_3/2.4.4/scala-collection-compat_3-2.4.4.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/typename_3/1.0.0/typename_3-1.0.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0/slf4j-api-2.0.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-io_3/3.2.12/fs2-io_3-3.2.12.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-core_3/2.4.0/log4cats-core_3-2.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-common_3/0.4.0/tsec-common_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-jca_3/0.4.0/tsec-cipher-jca_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-mac_3/0.4.0/tsec-mac_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-hash-jca_3/0.4.0/tsec-hash-jca_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-password_3/0.4.0/tsec-password_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-mac_3/0.4.0/tsec-jwt-mac_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.8.0/cats-core_3-2.8.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_3/0.14.1/circe-parser_3-0.14.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lambdaworks/scrypt/1.4.0/scrypt-1.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/log4s/log4s_3/1.10.0/log4s_3-1.10.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/case-insensitive_3/1.2.0/case-insensitive_3-1.2.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-parse_3/0.3.8/cats-parse_3-0.3.8.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-crypto_3/0.2.3/http4s-crypto_3-0.2.3.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/comcast/ip4s-core_3/3.1.3/ip4s-core_3-3.1.3.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/literally_3/1.1.0/literally_3-1.1.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.1.34/scodec-bits_3-1.1.34.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/vault_3/3.2.1/vault_3-3.2.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-fs2_3/2.2.0/jawn-fs2_3-2.2.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_3/0.14.2/circe-numbers_3-0.14.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-free_3/2.6.1/cats-free_3-2.6.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-core_3/0.4.0/tsec-cipher-core_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-core_3/0.4.0/tsec-jwt-core_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.8.0/cats-kernel_3-2.8.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_3/0.5.4/simulacrum-scalafix-annotations_3-0.5.4.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-signatures_3/0.4.0/tsec-signatures_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-bouncy_3/0.4.0/tsec-bouncy_3-0.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68.jar"
+        ],
+        "out": "/Users/daniel/dev/rockthejvm/courses/typelevel-project/.bloop/root",
+        "classesDir": "/Users/daniel/dev/rockthejvm/courses/typelevel-project/.bloop/root/scala-3/classes",
+        "resources": [
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/src/main/resources",
+            "/Users/daniel/dev/rockthejvm/courses/typelevel-project/target/scala-3.2.1/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "3.2.1",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.1/scala3-compiler_3-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.1/scala3-interfaces-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.1/tasty-core_3-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.1/scaladoc_3-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.1/scala3-tasty-inspector_3-3.2.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12.jar",
+                "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/daniel/dev/rockthejvm/courses/typelevel-project"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.2.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-effect_3",
+                    "version": "3.3.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-effect_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.3.14/cats-effect_3-3.3.14.jar"
+                        },
+                        {
+                            "name": "cats-effect_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.3.14/cats-effect_3-3.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-dsl_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-dsl_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-dsl_3/0.23.15/http4s-dsl_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-dsl_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-dsl_3/0.23.15/http4s-dsl_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-ember-server_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-ember-server_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-server_3/0.23.15/http4s-ember-server_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-ember-server_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-server_3/0.23.15/http4s-ember-server_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-circe_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-circe_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-circe_3/0.23.15/http4s-circe_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-circe_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-circe_3/0.23.15/http4s-circe_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-generic_3",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-generic_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_3/0.14.1/circe-generic_3-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-generic_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_3/0.14.1/circe-generic_3-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-fs2_3",
+                    "version": "0.14.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-fs2_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-fs2_3/0.14.0/circe-fs2_3-0.14.0.jar"
+                        },
+                        {
+                            "name": "circe-fs2_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-fs2_3/0.14.0/circe-fs2_3-0.14.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tpolecat",
+                    "name": "doobie-core_3",
+                    "version": "1.0.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "doobie-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-core_3/1.0.0-RC1/doobie-core_3-1.0.0-RC1.jar"
+                        },
+                        {
+                            "name": "doobie-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-core_3/1.0.0-RC1/doobie-core_3-1.0.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tpolecat",
+                    "name": "doobie-hikari_3",
+                    "version": "1.0.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "doobie-hikari_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-hikari_3/1.0.0-RC1/doobie-hikari_3-1.0.0-RC1.jar"
+                        },
+                        {
+                            "name": "doobie-hikari_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-hikari_3/1.0.0-RC1/doobie-hikari_3-1.0.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tpolecat",
+                    "name": "doobie-postgres_3",
+                    "version": "1.0.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "doobie-postgres_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-postgres_3/1.0.0-RC1/doobie-postgres_3-1.0.0-RC1.jar"
+                        },
+                        {
+                            "name": "doobie-postgres_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-postgres_3/1.0.0-RC1/doobie-postgres_3-1.0.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.pureconfig",
+                    "name": "pureconfig-core_3",
+                    "version": "0.17.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pureconfig-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_3/0.17.1/pureconfig-core_3-0.17.1.jar"
+                        },
+                        {
+                            "name": "pureconfig-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/pureconfig/pureconfig-core_3/0.17.1/pureconfig-core_3-0.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "log4cats-slf4j_3",
+                    "version": "2.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4cats-slf4j_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-slf4j_3/2.4.0/log4cats-slf4j_3-2.4.0.jar"
+                        },
+                        {
+                            "name": "log4cats-slf4j_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-slf4j_3/2.4.0/log4cats-slf4j_3-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-simple",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-simple",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.0/slf4j-simple-2.0.0.jar"
+                        },
+                        {
+                            "name": "slf4j-simple",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.0/slf4j-simple-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-http4s_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-http4s_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-http4s_3/0.4.0/tsec-http4s_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-http4s_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-http4s_3/0.4.0/tsec-http4s_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.sun.mail",
+                    "name": "javax.mail",
+                    "version": "1.6.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.mail",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar"
+                        },
+                        {
+                            "name": "javax.mail",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-effect-kernel_3",
+                    "version": "3.3.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-effect-kernel_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.3.14/cats-effect-kernel_3-3.3.14.jar"
+                        },
+                        {
+                            "name": "cats-effect-kernel_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.3.14/cats-effect-kernel_3-3.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-effect-std_3",
+                    "version": "3.3.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-effect-std_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.3.14/cats-effect-std_3-3.3.14.jar"
+                        },
+                        {
+                            "name": "cats-effect-std_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.3.14/cats-effect-std_3-3.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-core_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-core_3/0.23.15/http4s-core_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-core_3/0.23.15/http4s-core_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-ember-core_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-ember-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-core_3/0.23.15/http4s-ember-core_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-ember-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-ember-core_3/0.23.15/http4s-ember-core_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-server_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-server_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-server_3/0.23.15/http4s-server_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-server_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-server_3/0.23.15/http4s-server_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-jawn_3",
+                    "version": "0.23.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-jawn_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-jawn_3/0.23.15/http4s-jawn_3-0.23.15.jar"
+                        },
+                        {
+                            "name": "http4s-jawn_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-jawn_3/0.23.15/http4s-jawn_3-0.23.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-core_3",
+                    "version": "0.14.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_3/0.14.2/circe-core_3-0.14.2.jar"
+                        },
+                        {
+                            "name": "circe-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_3/0.14.2/circe-core_3-0.14.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-jawn_3",
+                    "version": "0.14.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-jawn_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_3/0.14.2/circe-jawn_3-0.14.2.jar"
+                        },
+                        {
+                            "name": "circe-jawn_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_3/0.14.2/circe-jawn_3-0.14.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "co.fs2",
+                    "name": "fs2-core_3",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fs2-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.2.12/fs2-core_3-3.2.12.jar"
+                        },
+                        {
+                            "name": "fs2-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.2.12/fs2-core_3-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "jawn-parser_3",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jawn-parser_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_3/1.4.0/jawn-parser_3-1.4.0.jar"
+                        },
+                        {
+                            "name": "jawn-parser_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_3/1.4.0/jawn-parser_3-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tpolecat",
+                    "name": "doobie-free_3",
+                    "version": "1.0.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "doobie-free_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-free_3/1.0.0-RC1/doobie-free_3-1.0.0-RC1.jar"
+                        },
+                        {
+                            "name": "doobie-free_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/doobie-free_3/1.0.0-RC1/doobie-free_3-1.0.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_3",
+                    "version": "2.4.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_3/2.4.4/scala-collection-compat_3-2.4.4.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_3/2.4.4/scala-collection-compat_3-2.4.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tpolecat",
+                    "name": "typename_3",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "typename_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/typename_3/1.0.0/typename_3-1.0.0.jar"
+                        },
+                        {
+                            "name": "typename_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tpolecat/typename_3/1.0.0/typename_3-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.zaxxer",
+                    "name": "HikariCP",
+                    "version": "4.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HikariCP",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0/slf4j-api-2.0.0.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0/slf4j-api-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "co.fs2",
+                    "name": "fs2-io_3",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fs2-io_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-io_3/3.2.12/fs2-io_3-3.2.12.jar"
+                        },
+                        {
+                            "name": "fs2-io_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-io_3/3.2.12/fs2-io_3-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.postgresql",
+                    "name": "postgresql",
+                    "version": "42.2.23",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "postgresql",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar"
+                        },
+                        {
+                            "name": "postgresql",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.23/postgresql-42.2.23-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "log4cats-core_3",
+                    "version": "2.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4cats-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-core_3/2.4.0/log4cats-core_3-2.4.0.jar"
+                        },
+                        {
+                            "name": "log4cats-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/log4cats-core_3/2.4.0/log4cats-core_3-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-common_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-common_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-common_3/0.4.0/tsec-common_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-common_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-common_3/0.4.0/tsec-common_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-cipher-jca_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-cipher-jca_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-jca_3/0.4.0/tsec-cipher-jca_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-cipher-jca_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-jca_3/0.4.0/tsec-cipher-jca_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-mac_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-mac_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-mac_3/0.4.0/tsec-mac_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-mac_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-mac_3/0.4.0/tsec-mac_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-hash-jca_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-hash-jca_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-hash-jca_3/0.4.0/tsec-hash-jca_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-hash-jca_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-hash-jca_3/0.4.0/tsec-hash-jca_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-password_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-password_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-password_3/0.4.0/tsec-password_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-password_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-password_3/0.4.0/tsec-password_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-jwt-mac_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-jwt-mac_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-mac_3/0.4.0/tsec-jwt-mac_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-jwt-mac_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-mac_3/0.4.0/tsec-jwt-mac_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-core_3",
+                    "version": "2.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.8.0/cats-core_3-2.8.0.jar"
+                        },
+                        {
+                            "name": "cats-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.8.0/cats-core_3-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar"
+                        },
+                        {
+                            "name": "commons-codec",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-parser_3",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-parser_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_3/0.14.1/circe-parser_3-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-parser_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_3/0.14.1/circe-parser_3-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lambdaworks",
+                    "name": "scrypt",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scrypt",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lambdaworks/scrypt/1.4.0/scrypt-1.4.0.jar"
+                        },
+                        {
+                            "name": "scrypt",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lambdaworks/scrypt/1.4.0/scrypt-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.log4s",
+                    "name": "log4s_3",
+                    "version": "1.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4s_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/log4s/log4s_3/1.10.0/log4s_3-1.10.0.jar"
+                        },
+                        {
+                            "name": "log4s_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/log4s/log4s_3/1.10.0/log4s_3-1.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.activation",
+                    "name": "activation",
+                    "version": "1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "activation",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar"
+                        },
+                        {
+                            "name": "activation",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "case-insensitive_3",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "case-insensitive_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/case-insensitive_3/1.2.0/case-insensitive_3-1.2.0.jar"
+                        },
+                        {
+                            "name": "case-insensitive_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/case-insensitive_3/1.2.0/case-insensitive_3-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-parse_3",
+                    "version": "0.3.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-parse_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-parse_3/0.3.8/cats-parse_3-0.3.8.jar"
+                        },
+                        {
+                            "name": "cats-parse_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-parse_3/0.3.8/cats-parse_3-0.3.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.http4s",
+                    "name": "http4s-crypto_3",
+                    "version": "0.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http4s-crypto_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-crypto_3/0.2.3/http4s-crypto_3-0.2.3.jar"
+                        },
+                        {
+                            "name": "http4s-crypto_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-crypto_3/0.2.3/http4s-crypto_3-0.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.comcast",
+                    "name": "ip4s-core_3",
+                    "version": "3.1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ip4s-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/comcast/ip4s-core_3/3.1.3/ip4s-core_3-3.1.3.jar"
+                        },
+                        {
+                            "name": "ip4s-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/comcast/ip4s-core_3/3.1.3/ip4s-core_3-3.1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "literally_3",
+                    "version": "1.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "literally_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/literally_3/1.1.0/literally_3-1.1.0.jar"
+                        },
+                        {
+                            "name": "literally_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/literally_3/1.1.0/literally_3-1.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scodec",
+                    "name": "scodec-bits_3",
+                    "version": "1.1.34",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scodec-bits_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.1.34/scodec-bits_3-1.1.34.jar"
+                        },
+                        {
+                            "name": "scodec-bits_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.1.34/scodec-bits_3-1.1.34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "vault_3",
+                    "version": "3.2.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "vault_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/vault_3/3.2.1/vault_3-3.2.1.jar"
+                        },
+                        {
+                            "name": "vault_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/vault_3/3.2.1/vault_3-3.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "hpack",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "hpack",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2.jar"
+                        },
+                        {
+                            "name": "hpack",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "jawn-fs2_3",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jawn-fs2_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-fs2_3/2.2.0/jawn-fs2_3-2.2.0.jar"
+                        },
+                        {
+                            "name": "jawn-fs2_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-fs2_3/2.2.0/jawn-fs2_3-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-numbers_3",
+                    "version": "0.14.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-numbers_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_3/0.14.2/circe-numbers_3-0.14.2.jar"
+                        },
+                        {
+                            "name": "circe-numbers_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_3/0.14.2/circe-numbers_3-0.14.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-free_3",
+                    "version": "2.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-free_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-free_3/2.6.1/cats-free_3-2.6.1.jar"
+                        },
+                        {
+                            "name": "cats-free_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-free_3/2.6.1/cats-free_3-2.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2f50520c8abea66fbd8d26e481d3aef5c673b510"
+                            },
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-cipher-core_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-cipher-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-core_3/0.4.0/tsec-cipher-core_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-cipher-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-cipher-core_3/0.4.0/tsec-cipher-core_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-jwt-core_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-jwt-core_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-core_3/0.4.0/tsec-jwt-core_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-jwt-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-jwt-core_3/0.4.0/tsec-jwt-core_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-kernel_3",
+                    "version": "2.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-kernel_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.8.0/cats-kernel_3-2.8.0.jar"
+                        },
+                        {
+                            "name": "cats-kernel_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.8.0/cats-kernel_3-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "simulacrum-scalafix-annotations_3",
+                    "version": "0.5.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "simulacrum-scalafix-annotations_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_3/0.5.4/simulacrum-scalafix-annotations_3-0.5.4.jar"
+                        },
+                        {
+                            "name": "simulacrum-scalafix-annotations_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_3/0.5.4/simulacrum-scalafix-annotations_3-0.5.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-signatures_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-signatures_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-signatures_3/0.4.0/tsec-signatures_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-signatures_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-signatures_3/0.4.0/tsec-signatures_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.jmcardon",
+                    "name": "tsec-bouncy_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tsec-bouncy_3",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-bouncy_3/0.4.0/tsec-bouncy_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "tsec-bouncy_3",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/jmcardon/tsec-bouncy_3/0.4.0/tsec-bouncy_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bouncycastle",
+                    "name": "bcprov-jdk15on",
+                    "version": "1.68",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "bcprov-jdk15on",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68.jar"
+                        },
+                        {
+                            "name": "bcprov-jdk15on",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
