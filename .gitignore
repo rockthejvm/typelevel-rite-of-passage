@@ -143,3 +143,16 @@ hs_err_pid*
 .bloop
 .bloop
 .bloop/**/*.tasty
+
+### app ###
+app/.DS_Store
+app/.parcel-cache
+app/node_modules
+app/dist
+
+### Bloop
+.bloop
+
+### Metals
+.metals/
+.metals/metals.lock.db
