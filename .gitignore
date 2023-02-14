@@ -151,8 +151,7 @@ app/node_modules
 app/dist
 
 ### Bloop
-.bloop
+.bloop/
 
 ### Metals
 .metals/
-.metals/metals.lock.db
