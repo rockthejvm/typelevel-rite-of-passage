@@ -48,7 +48,7 @@ INSERT INTO jobs(
 	'Awesome Company', -- company
 	'Tech Lead', -- title
 	'An awesome job in Berlin', -- description
-	'rockthejvm.com/awesomejob', -- externalUrl
+	'https://rockthejvm.com/awesomejob', -- externalUrl
 	false, -- remote
 	'Berlin', -- location
 	2000, -- salaryLo
