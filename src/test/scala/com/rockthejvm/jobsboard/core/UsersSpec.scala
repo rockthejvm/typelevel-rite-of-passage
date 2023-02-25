@@ -19,7 +19,7 @@ class UsersSpec
     with Matchers
     with Inside
     with DoobieSpec
-    with UsersFixture {
+    with UserFixture {
   override val initScript: String = "sql/users.sql"
   given logger: Logger[IO]        = Slf4jLogger.getLogger[IO]
 

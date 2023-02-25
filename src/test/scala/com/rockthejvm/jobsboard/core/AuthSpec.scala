@@ -20,7 +20,7 @@ import com.rockthejvm.jobsboard.domain.security.*
 import tsec.passwordhashers.jca.BCrypt
 import tsec.passwordhashers.PasswordHash
 
-class AuthSpec extends AsyncFreeSpec with AsyncIOSpec with Matchers with UsersFixture {
+class AuthSpec extends AsyncFreeSpec with AsyncIOSpec with Matchers with UserFixture {
 
   given logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
