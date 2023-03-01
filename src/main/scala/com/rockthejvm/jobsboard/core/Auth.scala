@@ -20,22 +20,17 @@ import com.rockthejvm.jobsboard.domain.auth.*
 import com.rockthejvm.jobsboard.domain.user.*
 
 trait Auth[F[_]] {
-  def login(email: String, password: String): F[Option[JwtToken]]
+  def login(email: String, password: String): F[Option[User]]
   def signUp(newUserInfo: NewUserInfo): F[Option[User]]
   def changePassword(
       email: String,
       newPasswordInfo: NewPasswordInfo
   ): F[Either[String, Option[User]]]
   def delete(email: String): F[Boolean]
-
-  def authenticator: Authenticator[F]
 }
 
-class LiveAuth[F[_]: Async: Logger] private (
-    users: Users[F],
-    override val authenticator: Authenticator[F]
-) extends Auth[F] {
-  override def login(email: String, password: String): F[Option[JwtToken]] =
+class LiveAuth[F[_]: Async: Logger] private (users: Users[F]) extends Auth[F] {
+  override def login(email: String, password: String): F[Option[User]] =
     for {
       // find the user in the DB -> return None if no user
       maybeUser <- users.find(email)
@@ -47,9 +42,7 @@ class LiveAuth[F[_]: Async: Logger] private (
             PasswordHash[BCrypt](user.hashedPassword)
           )
       )
-      // return a new token if password matches
-      maybeJwtToken <- maybeValidatedUser.traverse(user => authenticator.create(user.email))
-    } yield maybeJwtToken
+    } yield maybeValidatedUser
 
   override def signUp(newUserInfo: NewUserInfo): F[Option[User]] =
     // find the user in the db, if we did => None
@@ -111,46 +104,6 @@ class LiveAuth[F[_]: Async: Logger] private (
 }
 
 object LiveAuth {
-  def apply[F[_]: Async: Logger](
-      users: Users[F]
-  )(securityConfig: SecurityConfig): F[LiveAuth[F]] = {
-
-    // 1. identity store: String => OptionT[F, User]
-    val idStore: IdentityStore[F, String, User] = (email: String) => OptionT(users.find(email))
-
-    // 2. backing store for JWT tokens: BackingStore[F, id, JwtToken]
-    val tokenStoreF = Ref.of[F, Map[SecureRandomId, JwtToken]](Map.empty).map { ref =>
-      new BackingStore[F, SecureRandomId, JwtToken] {
-        override def get(id: SecureRandomId): OptionT[F, JwtToken] =
-          OptionT(ref.get.map(_.get(id)))
-
-        override def put(elem: JwtToken): F[JwtToken] =
-          ref.modify(store => (store + (elem.id -> elem), elem))
-
-        override def update(v: JwtToken): F[JwtToken] =
-          put(v)
-
-        override def delete(id: SecureRandomId): F[Unit] =
-          ref.modify(store => (store - id, ()))
-      }
-    }
-
-    // 3. hashing key
-    val keyF =
-      HMACSHA256.buildKey[F](securityConfig.secret.getBytes("UTF-8")) // TODO move to config
-
-    for {
-      key        <- keyF
-      tokenStore <- tokenStoreF
-      // 4. authenticator
-      authenticator = JWTAuthenticator.backed.inBearerToken(
-        expiryDuration = securityConfig.jwtExpiryDuration, // expiration of tokens
-        maxIdle = None,                                    // max idle time (optional)
-        identityStore = idStore,                           // identity store
-        tokenStore = tokenStore,
-        signingKey = key // hash key
-      )
-    } yield // 5. live auth
-      new LiveAuth[F](users, authenticator)
-  }
+  def apply[F[_]: Async: Logger](users: Users[F]): F[LiveAuth[F]] =
+    new LiveAuth[F](users).pure[F]
 }
