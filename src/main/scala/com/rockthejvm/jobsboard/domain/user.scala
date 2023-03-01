@@ -4,6 +4,8 @@ import doobie.util.meta.Meta
 import tsec.authorization.SimpleAuthEnum
 import tsec.authorization.AuthGroup
 
+import job.*
+
 object user {
   final case class User(
       email: String,
@@ -12,7 +14,11 @@ object user {
       lastName: Option[String],
       company: Option[String],
       role: Role
-  )
+  ) {
+    def owns(job: Job): Boolean = email == job.ownerEmail
+    def isAdmin: Boolean        = role == Role.ADMIN
+    def isRecruiter: Boolean    = role == Role.RECRUITER
+  }
 
   final case class NewUserInfo(
       email: String,

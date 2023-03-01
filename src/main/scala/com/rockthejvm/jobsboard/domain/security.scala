@@ -11,14 +11,16 @@ import tsec.authorization.BasicRBAC
 
 import com.rockthejvm.jobsboard.domain.user.*
 import tsec.authorization.AuthorizationInfo
-import tsec.authentication.TSecAuthService
+import tsec.authentication.{TSecAuthService, SecuredRequestHandler}
 import org.http4s.Status
 
 object security {
   type Crypto              = HMACSHA256
   type JwtToken            = AugmentedJWT[Crypto, String]
   type Authenticator[F[_]] = JWTAuthenticator[F, String, User, Crypto]
-  type AuthRoute[F[_]]     = PartialFunction[SecuredRequest[F, User, JwtToken], F[Response[F]]]
+  // type aliases for http routes
+  type AuthRoute[F[_]]      = PartialFunction[SecuredRequest[F, User, JwtToken], F[Response[F]]]
+  type SecuredHandler[F[_]] = SecuredRequestHandler[F, String, User, JwtToken]
 
   // RBAC
   // BasicRBAC[F, Role, User, JwtToken]
