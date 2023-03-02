@@ -19,11 +19,11 @@ trait Emails[F[_]] {
 
 class LiveEmails[F[_]: MonadCancelThrow] private (emailServiceConfig: EmailServiceConfig)
     extends Emails[F] {
-  val host        = emailServiceConfig.host
-  val port        = emailServiceConfig.port
-  val user        = emailServiceConfig.user
-  val pass        = emailServiceConfig.pass
-  val frontendUrl = emailServiceConfig.frontendUrl
+  private val host        = emailServiceConfig.host
+  private val port        = emailServiceConfig.port
+  private val user        = emailServiceConfig.user
+  private val pass        = emailServiceConfig.pass
+  private val frontendUrl = emailServiceConfig.frontendUrl
 
   // API
 
@@ -62,7 +62,7 @@ class LiveEmails[F[_]: MonadCancelThrow] private (emailServiceConfig: EmailServi
 
   // private
 
-  val propsResource: Resource[F, Properties] = {
+  private val propsResource: Resource[F, Properties] = {
     val prop = new Properties
     prop.put("mail.smtp.auth", true)
     prop.put("mail.smtp.starttls.enable", true)
@@ -72,16 +72,16 @@ class LiveEmails[F[_]: MonadCancelThrow] private (emailServiceConfig: EmailServi
     Resource.pure(prop)
   }
 
-  val authenticatorResource: Resource[F, Authenticator] =
+  private val authenticatorResource: Resource[F, Authenticator] =
     Resource.pure(new Authenticator {
       override protected def getPasswordAuthentication(): PasswordAuthentication =
         new PasswordAuthentication(user, pass)
     })
 
-  def createSession(prop: Properties, auth: Authenticator): Resource[F, Session] =
+  private def createSession(prop: Properties, auth: Authenticator): Resource[F, Session] =
     Resource.pure(Session.getInstance(prop, auth))
 
-  def createMessage(
+  private def createMessage(
       session: Session
   )(from: String, to: String, subject: String, content: String): Resource[F, MimeMessage] = {
     val message = new MimeMessage(session)
