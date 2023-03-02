@@ -1,5 +1,7 @@
 package com.rockthejvm.jobsboard.fixtures
 
+import cats.effect.IO
+import com.rockthejvm.jobsboard.core.Users
 import com.rockthejvm.jobsboard.domain.user.*
 
 /*
@@ -9,6 +11,16 @@ simplepassword => $2a$10$6LQt4xy4LzqQihZiRZGG0eeeDwDCvyvthICXzPKQDQA3C47LtrQFy
 riccardorocks => $2a$10$PUD6CznGVHntJFsOOeV4NezBgBUs6irV3sC9fa6ufc0xp9VLYyHZ.
  */
 trait UserFixture {
+
+  val mockedUsers: Users[IO] = new Users[IO] {
+    override def find(email: String): IO[Option[User]] =
+      if (email == danielEmail) IO.pure(Some(Daniel))
+      else IO.pure(None)
+    override def create(user: User): IO[String]       = IO.pure(user.email)
+    override def update(user: User): IO[Option[User]] = IO.pure(Some(user))
+    override def delete(email: String): IO[Boolean]   = IO.pure(true)
+  }
+
   val Daniel = User(
     "daniel@rockthejvm.com",
     "$2a$10$jY60jL/9Lv6./UHhhj2ZvOSm8PQIiTueC4gmsegrD5K.Yi6/mGY.m",
