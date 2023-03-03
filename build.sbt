@@ -1,6 +1,53 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "3.2.1"
+lazy val rockthejvm    = "com.rockthejvm"
+lazy val scala3Version = "3.2.1"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Common - contains domain model
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+lazy val core = (crossProject(JSPlatform, JVMPlatform) in file("common"))
+  .settings(
+    name         := "common",
+    scalaVersion := scala3Version,
+    organization := rockthejvm
+  )
+  .jvmSettings(
+    // add here if necessary
+  )
+  .jsSettings(
+    // Add JS-specific settings here
+  )
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Frontend
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+lazy val tyrianVersion = "0.6.1"
+lazy val fs2DomVersion = "0.1.0"
+lazy val laikaVersion  = "0.19.0"
+lazy val circeVersion  = "0.14.0"
+
+lazy val app = (project in file("app"))
+  .enablePlugins(ScalaJSPlugin)
+  .settings(
+    name         := "app",
+    scalaVersion := scala3Version,
+    organization := rockthejvm,
+    libraryDependencies ++= Seq(
+      "io.indigoengine" %%% "tyrian-io"     % tyrianVersion,
+      "com.armanbilge"  %%% "fs2-dom"       % fs2DomVersion,
+      "org.planet42"    %%% "laika-core"    % laikaVersion,
+      "io.circe"        %%% "circe-core"    % circeVersion,
+      "io.circe"        %%% "circe-parser"  % circeVersion,
+      "io.circe"        %%% "circe-generic" % circeVersion
+    ),
+    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },
+    semanticdbEnabled := true,
+    autoAPIMappings   := true
+  )
+  .dependsOn(core.js)
 
 lazy val catsEffectVersion          = "3.3.14"
 lazy val http4sVersion              = "0.23.15"
@@ -14,11 +61,12 @@ lazy val testContainerVersion       = "1.17.3"
 lazy val logbackVersion             = "1.4.0"
 lazy val slf4jVersion               = "2.0.0"
 lazy val javaMailVersion            = "1.6.2"
-lazy val circeVersion               = "0.14.0"
 
-lazy val root = (project in file("."))
+lazy val server = (project in file("server"))
   .settings(
-    name := "typelevel-project",
+    name         := "server",
+    scalaVersion := scala3Version,
+    organization := rockthejvm,
     libraryDependencies ++= Seq(
       "org.typelevel"         %% "cats-effect"         % catsEffectVersion,
       "org.http4s"            %% "http4s-dsl"          % http4sVersion,
@@ -44,3 +92,4 @@ lazy val root = (project in file("."))
     ),
     Compile / mainClass := Some("com.rockthejvm.jobsboard.Application")
   )
+  .dependsOn(core.jvm)

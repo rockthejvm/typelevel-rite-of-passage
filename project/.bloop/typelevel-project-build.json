@@ -19,9 +19,26 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.7.3/sbt-1.7.3.jar",
             "/Users/daniel/.sbt/boot/scala-2.12.17/lib/scala-library.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.6/sbt-bloop-1.5.6.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.9.11/sbt-native-packager-1.9.11.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/sbt-scalajs_2.12_1.0/1.12.0/sbt-scalajs-1.12.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-scalajs-bundler_2.12_1.0/0.21.0/sbt-scalajs-bundler-0.21.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-scalajs-crossproject_2.12_1.0/1.2.0/sbt-scalajs-crossproject-1.2.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.7.3/main_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.7.0/io_2.12-1.7.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/1.5.5/bloop-config_2.12-1.5.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.9/ant-1.10.9.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-linker-interface_2.12/1.12.0/scalajs-linker-interface_2.12-1.12.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.12/1.12.0/scalajs-sbt-test-adapter_2.12-1.12.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-platform-deps_2.12_1.0/1.0.1/sbt-platform-deps-1.0.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.12/1.4.0/scalajs-js-envs_2.12-1.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-nodejs_2.12/1.4.0/scalajs-env-nodejs_2.12-1.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/jimfs/jimfs/1.2/jimfs-1.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.2/play-json_2.12-2.9.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-crossproject_2.12_1.0/1.2.0/sbt-crossproject-1.2.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.7.3/logic_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.7.3/actions_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.7.3/main-settings_2.12-1.7.3.jar",
@@ -31,7 +48,6 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.7.3/scripted-plugin_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.7.3/zinc-lm-integration_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.7.3/util-logging_2.12-1.7.3.jar",
-            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.4.1/launcher-interface-1.4.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.0.12/lm-coursier-shaded_2.12-2.0.12.jar",
@@ -46,6 +62,18 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.9/ant-launcher-1.10.9.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.12/1.12.0/scalajs-ir_2.12-1.12.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-logging_2.12/1.1.1/scalajs-logging_2.12-1.1.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1-android/guava-30.1-android.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.2/play-functional_2.12-2.9.2.jar",
+            "/Users/daniel/.sbt/boot/scala-2.12.17/lib/scala-reflect.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.7.3/util-relation_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.7.3/completion_2.12-1.7.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.7.3/task-system_2.12-1.7.3.jar",
@@ -70,7 +98,6 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jansi/3.19.0/jline-terminal-jansi-3.19.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2.jar",
-            "/Users/daniel/.sbt/boot/scala-2.12.17/lib/scala-reflect.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.8.1/scala-collection-compat_2.12-2.8.1.jar",
@@ -79,10 +106,14 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.7.0/gigahorse-apache-http_2.12-0.7.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745/ivy-2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar",
+            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.19.0/jline-builtins-3.19.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.7.3/test-agent-1.7.3.jar",
-            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/0.9.1/shaded-jawn-parser_2.12-0.9.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.7.2/compiler-bridge_2.12-1.7.2.jar",
@@ -91,7 +122,6 @@
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.7.2/zinc-persist_2.12-1.7.2.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.9.1/sjson-new-murmurhash_2.12-0.9.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.5.0/ipcsocket-1.5.0.jar",
-            "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.10.1/zero-allocation-hashing-0.10.1.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.1.0/jansi-2.1.0.jar",
             "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.7.0/gigahorse-core_2.12-0.7.0.jar",
@@ -146,8 +176,8 @@
                 "import _root_.sbt._",
                 "import _root_.sbt.Keys._",
                 "import _root_.sbt.nio.Keys._",
-                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._",
-                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin"
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.com.typesafe.sbt.SbtNativePackager.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin.autoImport._, _root_.com.typesafe.sbt.packager.debian.DebianPlugin.autoImport._, _root_.com.typesafe.sbt.packager.docker.DockerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin.autoImport._, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin.autoImport._, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin.autoImport._, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin.autoImport._, _root_.org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._, _root_.scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport._, _root_.scalajscrossproject.ScalaJSCrossPlugin.autoImport._, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._, _root_.sbtcrossproject.CrossPlugin.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.com.typesafe.sbt.SbtNativePackager, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin, _root_.com.typesafe.sbt.packager.debian.DebianDeployPlugin, _root_.com.typesafe.sbt.packager.debian.DebianPlugin, _root_.com.typesafe.sbt.packager.debian.JDebPackaging, _root_.com.typesafe.sbt.packager.docker.DockerPlugin, _root_.com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmDeployPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalDeployPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsDeployPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin, _root_.org.scalajs.sbtplugin.ScalaJSJUnitPlugin, _root_.org.scalajs.sbtplugin.ScalaJSPlugin, _root_.scalajsbundler.sbtplugin.ScalaJSBundlerPlugin, _root_.scalajscrossproject.ScalaJSCrossPlugin, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin, _root_.sbtcrossproject.CrossPlugin"
             ]
         },
         "test": {
@@ -226,6 +256,74 @@
                     ]
                 },
                 {
+                    "organization": "com.github.sbt",
+                    "name": "sbt-native-packager",
+                    "version": "1.9.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-native-packager",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.9.11/sbt-native-packager-1.9.11.jar"
+                        },
+                        {
+                            "name": "sbt-native-packager",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.9.11/sbt-native-packager-1.9.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "sbt-scalajs",
+                    "version": "1.12.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-scalajs",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/sbt-scalajs_2.12_1.0/1.12.0/sbt-scalajs-1.12.0.jar"
+                        },
+                        {
+                            "name": "sbt-scalajs",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/sbt-scalajs_2.12_1.0/1.12.0/sbt-scalajs-1.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.epfl.scala",
+                    "name": "sbt-scalajs-bundler",
+                    "version": "0.21.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-scalajs-bundler",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-scalajs-bundler_2.12_1.0/0.21.0/sbt-scalajs-bundler-0.21.0.jar"
+                        },
+                        {
+                            "name": "sbt-scalajs-bundler",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-scalajs-bundler_2.12_1.0/0.21.0/sbt-scalajs-bundler-0.21.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.portable-scala",
+                    "name": "sbt-scalajs-crossproject",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-scalajs-crossproject",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-scalajs-crossproject_2.12_1.0/1.2.0/sbt-scalajs-crossproject-1.2.0.jar"
+                        },
+                        {
+                            "name": "sbt-scalajs-crossproject",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-scalajs-crossproject_2.12_1.0/1.2.0/sbt-scalajs-crossproject-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "ch.epfl.scala",
                     "name": "bloop-config_2.12",
                     "version": "1.5.5",
@@ -239,6 +337,227 @@
                             "name": "bloop-config_2.12",
                             "classifier": "sources",
                             "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/1.5.5/bloop-config_2.12-1.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-compress",
+                    "version": "1.21",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-compress",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar"
+                        },
+                        {
+                            "name": "commons-compress",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.ant",
+                    "name": "ant",
+                    "version": "1.10.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ant",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.9/ant-1.10.9.jar"
+                        },
+                        {
+                            "name": "ant",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.9/ant-1.10.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.eldis",
+                    "name": "tool-launcher",
+                    "version": "0.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tool-launcher",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2.jar"
+                        },
+                        {
+                            "name": "tool-launcher",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.12",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-linker-interface_2.12",
+                    "version": "1.12.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-linker-interface_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-linker-interface_2.12/1.12.0/scalajs-linker-interface_2.12-1.12.0.jar"
+                        },
+                        {
+                            "name": "scalajs-linker-interface_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-linker-interface_2.12/1.12.0/scalajs-linker-interface_2.12-1.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-sbt-test-adapter_2.12",
+                    "version": "1.12.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-sbt-test-adapter_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.12/1.12.0/scalajs-sbt-test-adapter_2.12-1.12.0.jar"
+                        },
+                        {
+                            "name": "scalajs-sbt-test-adapter_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.12/1.12.0/scalajs-sbt-test-adapter_2.12-1.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.portable-scala",
+                    "name": "sbt-platform-deps",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-platform-deps",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-platform-deps_2.12_1.0/1.0.1/sbt-platform-deps-1.0.1.jar"
+                        },
+                        {
+                            "name": "sbt-platform-deps",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-platform-deps_2.12_1.0/1.0.1/sbt-platform-deps-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-js-envs_2.12",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-js-envs_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.12/1.4.0/scalajs-js-envs_2.12-1.4.0.jar"
+                        },
+                        {
+                            "name": "scalajs-js-envs_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.12/1.4.0/scalajs-js-envs_2.12-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-env-nodejs_2.12",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-env-nodejs_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-nodejs_2.12/1.4.0/scalajs-env-nodejs_2.12-1.4.0.jar"
+                        },
+                        {
+                            "name": "scalajs-env-nodejs_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-nodejs_2.12/1.4.0/scalajs-env-nodejs_2.12-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.jimfs",
+                    "name": "jimfs",
+                    "version": "1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jimfs",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/jimfs/jimfs/1.2/jimfs-1.2.jar"
+                        },
+                        {
+                            "name": "jimfs",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/jimfs/jimfs/1.2/jimfs-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-json_2.12",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.2/play-json_2.12-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-json_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.2/play-json_2.12-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.portable-scala",
+                    "name": "sbt-crossproject",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-crossproject",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-crossproject_2.12_1.0/1.2.0/sbt-crossproject-1.2.0.jar"
+                        },
+                        {
+                            "name": "sbt-crossproject",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/sbt-crossproject_2.12_1.0/1.2.0/sbt-crossproject-1.2.0-sources.jar"
                         }
                     ]
                 },
@@ -273,6 +592,302 @@
                             "name": "scala-library",
                             "classifier": "sources",
                             "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.17/scala-library-2.12.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.ant",
+                    "name": "ant-launcher",
+                    "version": "1.10.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ant-launcher",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.9/ant-launcher-1.10.9.jar"
+                        },
+                        {
+                            "name": "ant-launcher",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.9/ant-launcher-1.10.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-ir_2.12",
+                    "version": "1.12.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-ir_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.12/1.12.0/scalajs-ir_2.12-1.12.0.jar"
+                        },
+                        {
+                            "name": "scalajs-ir_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.12/1.12.0/scalajs-ir_2.12-1.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-js",
+                    "name": "scalajs-logging_2.12",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs-logging_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-logging_2.12/1.1.1/scalajs-logging_2.12-1.1.1.jar"
+                        },
+                        {
+                            "name": "scalajs-logging_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-logging_2.12/1.1.1/scalajs-logging_2.12-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "30.1-android",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1-android/guava-30.1-android.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1-android/guava-30.1-android-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-functional_2.12",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.12",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.2/play-functional_2.12-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-functional_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.2/play-functional_2.12-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/daniel/.sbt/boot/scala-2.12.17/lib/scala-reflect.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.17/scala-reflect-2.12.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.10.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1dcf1de382a0bf95a3d8b0849546c88bac1292c9"
+                            },
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b421526c5f297295adef1c886e5246c39d4ac629"
+                            },
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-compat-qual",
+                    "version": "2.5.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-compat-qual",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar"
+                        },
+                        {
+                            "name": "checker-compat-qual",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ba035118bc8bac37d7eff77700720999acd9986d"
+                            },
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3-sources.jar"
                         }
                     ]
                 },
@@ -477,23 +1092,6 @@
                             "name": "util-logging_2.12",
                             "classifier": "sources",
                             "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.7.3/util-logging_2.12-1.7.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-xml_2.12",
-                    "version": "2.1.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-xml_2.12",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar"
-                        },
-                        {
-                            "name": "scala-xml_2.12",
-                            "classifier": "sources",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0-sources.jar"
                         }
                     ]
                 },
@@ -1127,23 +1725,6 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-lang",
-                    "name": "scala-reflect",
-                    "version": "2.12.17",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-reflect",
-                            "path": "/Users/daniel/.sbt/boot/scala-2.12.17/lib/scala-reflect.jar"
-                        },
-                        {
-                            "name": "scala-reflect",
-                            "classifier": "sources",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.17/scala-reflect-2.12.17-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "org.checkerframework",
                     "name": "checker-qual",
                     "version": "3.4.1",
@@ -1331,23 +1912,6 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-sbt",
-                    "name": "test-interface",
-                    "version": "1.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "test-interface",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
-                        },
-                        {
-                            "name": "test-interface",
-                            "classifier": "sources",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "com.eed3si9n",
                     "name": "shaded-jawn-parser_2.12",
                     "version": "0.9.1",
@@ -1480,23 +2044,6 @@
                             "name": "ipcsocket",
                             "classifier": "sources",
                             "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.5.0/ipcsocket-1.5.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-parser-combinators_2.12",
-                    "version": "1.1.2",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-parser-combinators_2.12",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar"
-                        },
-                        {
-                            "name": "scala-parser-combinators_2.12",
-                            "classifier": "sources",
-                            "path": "/Users/daniel/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar"
                         }
                     ]
                 },
