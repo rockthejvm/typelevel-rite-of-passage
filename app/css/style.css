@@ -1,4 +1,27 @@
 .nav-link {
-	padding: 20px;
 	color: red;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+
+.header-nav {
+	margin-left: auto;
+}
+
+.header-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-item {
+	padding: 10px;
+	list-style: none;
+}
+
+.home-logo {
+	height: 50px;
 }
