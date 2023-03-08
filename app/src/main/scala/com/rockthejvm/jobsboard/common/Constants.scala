@@ -7,5 +7,6 @@ object Constants {
   object Endpoints {
     val root   = "http://localhost:4041"
     val signup = s"$root/api/auth/users"
+    val login  = s"$root/api/auth/login"
   }
 }
