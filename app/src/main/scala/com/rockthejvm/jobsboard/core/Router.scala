@@ -5,6 +5,8 @@ import cats.effect.IO
 import fs2.dom.History
 import snabbdom.init
 
+import com.rockthejvm.jobsboard.*
+
 case class Router private (location: String, history: History[IO, String]) {
   import Router.*
 
@@ -27,7 +29,7 @@ case class Router private (location: String, history: History[IO, String]) {
 }
 
 object Router {
-  trait Msg
+  trait Msg                                                                      extends App.Msg
   case class ChangeLocation(location: String, browserTriggered: Boolean = false) extends Msg
   case class ExternalRedirect(location: String)                                  extends Msg
 
