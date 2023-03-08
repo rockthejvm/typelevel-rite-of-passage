@@ -11,6 +11,8 @@ import com.rockthejvm.jobsboard.domain.job.*
 import com.rockthejvm.jobsboard.domain.user.*
 import com.rockthejvm.jobsboard.domain.auth.*
 
+import com.rockthejvm.jobsboard.domain.auth
+import com.rockthejvm.jobsboard.domain.job
 object validators {
 
   sealed trait ValidationFailure(val errorMessage: String)

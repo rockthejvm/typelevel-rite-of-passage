@@ -25,6 +25,8 @@ import com.rockthejvm.jobsboard.http.responses.*
 import com.rockthejvm.jobsboard.http.validation.syntax.*
 import com.rockthejvm.jobsboard.logging.syntax.*
 
+import com.rockthejvm.jobsboard.domain.job
+import com.rockthejvm.jobsboard.domain.pagination
 class JobRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (jobs: Jobs[F])
     extends HttpValidationDsl[F] {
 

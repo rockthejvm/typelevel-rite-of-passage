@@ -5,6 +5,7 @@ import com.rockthejvm.jobsboard.domain.job.*
 
 import java.util.UUID
 
+import com.rockthejvm.jobsboard.domain.job
 trait JobFixture {
 
   val NotFoundJobUuid = UUID.fromString("6ea79557-3112-4c84-a8f5-1d1e2c300948")

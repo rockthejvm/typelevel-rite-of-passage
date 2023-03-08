@@ -20,6 +20,8 @@ import java.util.UUID
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 
+import com.rockthejvm.jobsboard.domain.job
+import com.rockthejvm.jobsboard.domain.pagination
 class JobRoutesSpec
     extends AsyncFreeSpec
     with AsyncIOSpec

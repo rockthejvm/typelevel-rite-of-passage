@@ -28,6 +28,7 @@ import com.rockthejvm.jobsboard.domain.security.*
 import com.rockthejvm.jobsboard.core.*
 import com.rockthejvm.jobsboard.fixtures.*
 
+import com.rockthejvm.jobsboard.domain.auth
 class AuthRoutesSpec
     extends AsyncFreeSpec
     with AsyncIOSpec

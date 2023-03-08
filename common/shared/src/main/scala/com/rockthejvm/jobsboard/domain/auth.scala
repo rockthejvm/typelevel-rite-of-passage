@@ -6,6 +6,14 @@ object auth {
       password: String
   )
 
+  final case class NewUserInfo(
+      email: String,
+      password: String,
+      firstName: Option[String],
+      lastName: Option[String],
+      company: Option[String]
+  )
+
   final case class NewPasswordInfo(
       oldPassword: String,
       newPassword: String
@@ -18,4 +26,5 @@ object auth {
       token: String,
       newPassword: String
   )
+
 }

@@ -2,8 +2,10 @@ package com.rockthejvm.jobsboard.fixtures
 
 import cats.effect.IO
 import com.rockthejvm.jobsboard.core.Users
+import com.rockthejvm.jobsboard.domain.auth.*
 import com.rockthejvm.jobsboard.domain.user.*
 
+import com.rockthejvm.jobsboard.domain.auth
 /*
 rockthejvm => $2a$10$jY60jL/9Lv6./UHhhj2ZvOSm8PQIiTueC4gmsegrD5K.Yi6/mGY.m
 riccardorulez => $2a$10$jDPXCNCHkbZLzmiTRuw9A.gBHRDQ1iKnYONCBuskyOln8Aa8eucFa

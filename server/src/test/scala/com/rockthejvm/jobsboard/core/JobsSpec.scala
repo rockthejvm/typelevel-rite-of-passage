@@ -13,6 +13,8 @@ import com.rockthejvm.jobsboard.fixtures.*
 import com.rockthejvm.jobsboard.domain.job.*
 import com.rockthejvm.jobsboard.domain.pagination.*
 
+import com.rockthejvm.jobsboard.domain.job
+import com.rockthejvm.jobsboard.domain.pagination
 class JobsSpec
     extends AsyncFreeSpec
     with AsyncIOSpec

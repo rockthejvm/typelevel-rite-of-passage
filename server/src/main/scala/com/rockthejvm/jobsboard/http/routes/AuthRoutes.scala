@@ -24,6 +24,7 @@ import com.rockthejvm.jobsboard.domain.user.*
 
 import scala.language.implicitConversions
 
+import com.rockthejvm.jobsboard.domain.auth
 class AuthRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (
     auth: Auth[F],
     authenticator: Authenticator[F]
@@ -53,7 +54,8 @@ class AuthRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (
           maybeNewUser <- auth.signUp(newUserInfo)
           resp <- maybeNewUser match {
             case Some(user) => Created(user.email)
-            case None       => BadRequest(s"User with email ${newUserInfo.email} already exists.")
+            case None =>
+              BadRequest(FailureResponse(s"User with email ${newUserInfo.email} already exists."))
           }
         } yield resp
       }

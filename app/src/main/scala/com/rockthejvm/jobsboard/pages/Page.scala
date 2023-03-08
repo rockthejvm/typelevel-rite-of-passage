@@ -6,6 +6,11 @@ import cats.effect.IO
 object Page {
   trait Msg
 
+  enum StatusKind {
+    case SUCCESS, ERROR, LOADING
+  }
+  final case class Status(message: String, kind: StatusKind)
+
   object Urls {
     val LOGIN            = "/login"
     val SIGNUP           = "/signup"

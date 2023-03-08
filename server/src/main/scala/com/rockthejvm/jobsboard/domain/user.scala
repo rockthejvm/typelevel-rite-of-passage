@@ -6,6 +6,7 @@ import tsec.authorization.AuthGroup
 
 import job.*
 
+import com.rockthejvm.jobsboard.domain.job
 object user {
   final case class User(
       email: String,
@@ -19,14 +20,6 @@ object user {
     def isAdmin: Boolean        = role == Role.ADMIN
     def isRecruiter: Boolean    = role == Role.RECRUITER
   }
-
-  final case class NewUserInfo(
-      email: String,
-      password: String,
-      firstName: Option[String],
-      lastName: Option[String],
-      company: Option[String]
-  )
 
   enum Role {
     case ADMIN, RECRUITER

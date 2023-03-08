@@ -11,6 +11,7 @@ import scala.io.StdIn
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 
+import com.rockthejvm.jobsboard.domain.job
 object JobsPlayground extends IOApp.Simple {
 
   given logger: Logger[IO] = Slf4jLogger.getLogger[IO]

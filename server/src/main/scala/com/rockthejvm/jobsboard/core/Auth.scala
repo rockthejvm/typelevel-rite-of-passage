@@ -19,6 +19,7 @@ import com.rockthejvm.jobsboard.domain.security.*
 import com.rockthejvm.jobsboard.domain.auth.*
 import com.rockthejvm.jobsboard.domain.user.*
 
+import com.rockthejvm.jobsboard.domain.auth
 trait Auth[F[_]] {
   def login(email: String, password: String): F[Option[User]]
   def signUp(newUserInfo: NewUserInfo): F[Option[User]]
