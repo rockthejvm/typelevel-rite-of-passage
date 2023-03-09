@@ -5,6 +5,7 @@ import tyrian.Html.*
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
+import com.rockthejvm.jobsboard.*
 import com.rockthejvm.jobsboard.core.*
 import com.rockthejvm.jobsboard.pages.*
 
@@ -16,9 +17,7 @@ object Header {
       renderLogo(),
       div(`class` := "header-nav")(
         ul(`class` := "header-links")(
-          renderNavLink("Jobs", Page.Urls.JOBS),
-          renderNavLink("Login", Page.Urls.LOGIN),
-          renderNavLink("Sign Up", Page.Urls.SIGNUP)
+          renderNavLinks()
         )
       )
     )
@@ -46,7 +45,30 @@ object Header {
       )
     )
 
-  private def renderNavLink(text: String, location: String) =
+  private def renderNavLinks(): List[Html[App.Msg]] = {
+    val constantLinks = List(
+      renderSimpleNavLink("Jobs", Page.Urls.JOBS)
+    )
+
+    val unauthedLinks = List(
+      renderSimpleNavLink("Login", Page.Urls.LOGIN),
+      renderSimpleNavLink("Sign Up", Page.Urls.SIGNUP)
+    )
+
+    val authedLinks = List(
+      renderNavLink("Log Out", Page.Urls.HASH)(_ => Session.Logout)
+    )
+
+    constantLinks ++ (
+      if (Session.isActive) authedLinks
+      else unauthedLinks
+    )
+  }
+
+  private def renderSimpleNavLink(text: String, location: String) =
+    renderNavLink(text, location)(Router.ChangeLocation(_))
+
+  private def renderNavLink(text: String, location: String)(location2msg: String => App.Msg) =
     li(`class` := "nav-item")(
       a(
         href    := location,
@@ -55,7 +77,7 @@ object Header {
           "click",
           e => {
             e.preventDefault() // native JS - prevent reloading the page
-            Router.ChangeLocation(location)
+            location2msg(location)
           }
         )
       )(text)
