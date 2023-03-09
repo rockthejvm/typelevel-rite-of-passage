@@ -10,6 +10,7 @@ import scala.scalajs.js.Date
 import com.rockthejvm.jobsboard.*
 import com.rockthejvm.jobsboard.common.*
 import com.rockthejvm.jobsboard.pages.Page
+import laika.ast.LengthUnit.ex
 
 final case class Session(email: Option[String] = None, token: Option[String] = None) {
   import Session.*
@@ -18,17 +19,24 @@ final case class Session(email: Option[String] = None, token: Option[String] = N
     case SetToken(e, t, isNewUser) =>
       val cookieCmd = Commands.setAllSessionCookies(e, t, isNewUser)
       val routingCmd =
-        if (isNewUser) Cmd.Emit(Router.ChangeLocation(Page.Urls.HOME))
-        else Cmd.None
+        if (isNewUser) Cmd.Emit(Router.ChangeLocation(Page.Urls.HOME)) // new user
+        else Commands.checkToken // check whether the token is still valid on the server
       (this.copy(email = Some(e), token = Some(t)), cookieCmd |+| routingCmd)
+    // check token action
+    case CheckToken =>
+      (this, Commands.checkToken)
+    case KeepToken =>
+      (this, Cmd.None)
+    // logout action
     case Logout =>
       val cmd = token.map(_ => Commands.logout).getOrElse(Cmd.None)
       (this, cmd)
-    case LogoutSuccess =>
+    case LogoutSuccess | InvalidateToken =>
       (
         this.copy(email = None, token = None),
         Commands.clearAllSessionCookies() |+| Cmd.Emit(Router.ChangeLocation(Page.Urls.HOME))
       )
+    // TODO
   }
 
   def initCmd: Cmd[IO, Msg] = {
@@ -44,9 +52,14 @@ final case class Session(email: Option[String] = None, token: Option[String] = N
 object Session {
   trait Msg                                                                     extends App.Msg
   case class SetToken(email: String, token: String, isNewUser: Boolean = false) extends Msg
-  case object Logout                                                            extends Msg
-  case object LogoutSuccess                                                     extends Msg
-  case object LogoutFailure                                                     extends Msg
+  // check the token
+  case object CheckToken      extends Msg
+  case object KeepToken       extends Msg
+  case object InvalidateToken extends Msg
+  // logout action
+  case object Logout        extends Msg
+  case object LogoutSuccess extends Msg
+  case object LogoutFailure extends Msg
 
   def isActive =
     getUserToken().nonEmpty
@@ -56,16 +69,30 @@ object Session {
 
   object Endpoints {
     val logout = new Endpoint[Msg] {
-      val location                   = Constants.Endpoints.logout
+      val location                   = Constants.endpoints.logout
       val method                     = Method.Post
       val onSuccess: Response => Msg = _ => LogoutSuccess
       val onError: HttpError => Msg  = _ => LogoutFailure
+    }
+
+    val checkToken = new Endpoint[Msg] {
+      override val location: String = Constants.endpoints.checkToken
+      override val method: Method   = Method.Get
+      override val onSuccess: Response => Msg = response =>
+        response.status match {
+          case Status(200, _) => KeepToken
+          case _              => InvalidateToken
+        }
+      override val onError: HttpError => Msg = _ => InvalidateToken
     }
   }
 
   object Commands {
     def logout: Cmd[IO, Msg] =
       Endpoints.logout.callAuthorized()
+
+    def checkToken: Cmd[IO, Msg] =
+      Endpoints.checkToken.callAuthorized()
 
     def setSessionCookie(name: String, value: String, isFresh: Boolean = false): Cmd[IO, Msg] =
       Cmd.SideEffect[IO] {
