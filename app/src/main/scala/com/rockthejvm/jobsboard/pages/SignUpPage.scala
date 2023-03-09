@@ -21,11 +21,8 @@ final case class SignUpPage(
     lastName: String = "",
     company: String = "",
     status: Option[Page.Status] = None
-) extends Page {
+) extends FormPage("Sign Up", status) {
   import SignUpPage.*
-
-  override def initCmd: Cmd[IO, App.Msg] =
-    Cmd.None
 
   override def update(msg: App.Msg): (Page, Cmd[IO, App.Msg]) = msg match {
     case UpdateEmail(e)            => (this.copy(email = e), Cmd.None)
@@ -61,54 +58,19 @@ final case class SignUpPage(
     case _ => (this, Cmd.None)
   }
 
-  override def view(): Html[App.Msg] =
-    div(`class` := "form-section")(
-      div(`class` := "top-section")(
-        h1("Sign Up")
-      ),
-      form(
-        name    := "signin",
-        `class` := "form",
-        onEvent(
-          "submit",
-          e => {
-            e.preventDefault()
-            NoOp
-          }
-        )
-      )(
-        // 6 inputs
-        renderInput("Email", "email", "text", true, UpdateEmail(_)),
-        renderInput("Password", "password", "password", true, UpdatePassword(_)),
-        renderInput("Confirm password", "cPassword", "password", true, UpdateConfirmPassword(_)),
-        renderInput("First Name", "firstName", "text", false, UpdateFirstName(_)),
-        renderInput("Last Name", "lastName", "text", false, UpdateLastName(_)),
-        renderInput("Company", "company", "text", false, UpdateCompany(_)),
-        // button
-        button(`type` := "button", onClick(AttemptSignUp))("Sign Up")
-      ),
-      status.map(s => div(s.message)).getOrElse(div())
-    )
+  override def renderFormContent(): List[Html[App.Msg]] = List(
+    renderInput("Email", "email", "text", true, UpdateEmail(_)),
+    renderInput("Password", "password", "password", true, UpdatePassword(_)),
+    renderInput("Confirm password", "cPassword", "password", true, UpdateConfirmPassword(_)),
+    renderInput("First Name", "firstName", "text", false, UpdateFirstName(_)),
+    renderInput("Last Name", "lastName", "text", false, UpdateLastName(_)),
+    renderInput("Company", "company", "text", false, UpdateCompany(_)),
+    button(`type` := "button", onClick(AttemptSignUp))("Sign Up")
+  )
 
   /////////////////////////////////////////////////////////////////////////
   // private
   /////////////////////////////////////////////////////////////////////////
-
-  // UI
-  private def renderInput(
-      name: String,
-      uid: String,
-      kind: String,
-      isRequired: Boolean,
-      onChange: String => Msg
-  ) =
-    div(`class` := "form-input")(
-      label(`for` := name, `class` := "form-label")(
-        if (isRequired) span("*") else span(),
-        text(name)
-      ),
-      input(`type` := kind, `class` := "form-control", id := uid, onInput(onChange))
-    )
 
   // util
   def setErrorStatus(message: String): Page =
@@ -136,7 +98,7 @@ object SignUpPage {
     val signup = new Endpoint[Msg] {
       val location = Constants.endpoints.signup
       val method   = Method.Post
-      val onSuccess: Response => Msg = response =>
+      val onResponse: Response => Msg = response =>
         response.status match {
           case Status(201, _) =>
             SignUpSuccess("Success! Log in now.")
