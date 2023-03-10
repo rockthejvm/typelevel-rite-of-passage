@@ -6,6 +6,7 @@ import tyrian.http.*
 import io.circe.generic.auto.*
 
 import com.rockthejvm.jobsboard.*
+import com.rockthejvm.jobsboard.core.*
 import com.rockthejvm.jobsboard.common.*
 import com.rockthejvm.jobsboard.domain.auth.*
 
@@ -30,6 +31,10 @@ final case class ProfilePage(
     case _ => (this, Cmd.None)
   }
 
+  override def view(): Html[App.Msg] =
+    if (Session.isActive) super.view()
+    else renderInvalidPage
+
   override protected def renderFormContent(): List[Html[App.Msg]] = List(
     renderInput("Old Password", "oldPassword", "password", true, UpdateOldPassword(_)),
     renderInput("New Password", "newPassword", "password", true, UpdateNewPassword(_)),
@@ -40,10 +45,17 @@ final case class ProfilePage(
   // private
   /////////////////////////////////////////////////////////////////////////
 
+  // UI
+  private def renderInvalidPage =
+    div(
+      h1("Profile"),
+      div("Ouch! It seems you're not logged in yet.")
+    )
+
   // util
-  def setErrorStatus(message: String): Page =
+  private def setErrorStatus(message: String): Page =
     this.copy(status = Some(Page.Status(message, Page.StatusKind.ERROR)))
-  def setSuccessStatus(message: String): Page =
+  private def setSuccessStatus(message: String): Page =
     this.copy(status = Some(Page.Status(message, Page.StatusKind.SUCCESS)))
 }
 
