@@ -225,7 +225,6 @@ object PostJobPage {
     def loadFile(maybeFile: Option[File]) =
       Cmd.Run[IO, Option[String], Msg](
         // run the effect here that returns an Option[String]
-        // Option[File] => Option[String]
         // Option[File].traverse(file => IO[String]) => IO[Option[String]]
         maybeFile.traverse { file =>
           IO.async_ { cb =>
