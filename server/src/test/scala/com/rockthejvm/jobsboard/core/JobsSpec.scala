@@ -145,5 +145,24 @@ class JobsSpec
         program.asserting(_ shouldBe List(AwesomeJob))
       }
     }
+
+    "should surface a comprehensive filter out of all jobs contained" in {
+      transactor.use { xa =>
+        val program = for {
+          jobs   <- LiveJobs[IO](xa)
+          filter <- jobs.possibleFilters()
+        } yield filter
+
+        program.asserting {
+          case JobFilter(companies, locations, countries, seniorities, tags, maxSalary, remote) =>
+            companies shouldBe List("Awesome Company")
+            locations shouldBe List("Berlin")
+            countries shouldBe List("Germany")
+            seniorities shouldBe List("Senior")
+            tags.toSet shouldBe Set("scala", "scala-3", "cats")
+            maxSalary shouldBe Some(3000)
+        }
+      }
+    }
   }
 }

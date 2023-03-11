@@ -60,4 +60,4 @@ INSERT INTO jobs(
 	'Senior', -- seniority
 	NULL, -- other
 	false -- active
-) 
+);
