@@ -1,0 +1,661 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --body-bg-color: #f6f6f6;
+    --background-color: #f14521;
+    --black: #000000;
+    --white: #FFFFFF;
+    --btn-focus: #07263a;
+    --btn-hover: #ff6544;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* ====================== START NAVBAR =========================== */
+
+.jvm-nav {
+    background: var(--white);
+}
+
+.JVM-nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.nav-item .jvm-item {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    /* letter-spacing: 0.12em; */
+    color: #222222 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item .jvm-item:focus {
+    color: var(--background-color) !important;
+}
+
+.nav-item .jvm-item:hover {
+    color: var(--background-color) !important;
+    transition-duration: 0s;
+}
+
+.cart {
+    width: 8px;
+    height: 5px;
+    color: var(--black);
+}
+
+
+
+.About-dpwn li a img {
+    margin-right: 10px;
+}
+
+.profile-img:hover {
+    color: var(--background-color) !important;
+}
+
+.nav-btne {
+    padding: 10px 18px 10px 18px;
+    background: var(--white);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 15px 0px 40px;
+    color: var(--background-color);
+}
+
+.nav-btne:focus {
+    background-color: var(--btn-focus) !important;
+    color: var(--white);
+    border: none;
+}
+
+.nav-btne:hover {
+    background-color: var(--background-color);
+    color: var(--white);
+}
+
+.nav-btne-login {
+    padding: 10px 29px 10px 29px;
+    color: var(--white);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 15px 0px 0px;
+    background-color: var(--background-color);
+}
+
+.nav-btne-login:focus {
+    background-color: var(--btn-focus) !important;
+    color: var(--white);
+    border: none;
+}
+
+.jvm-iteme:hover {
+    color: var(--btn-hover) !important;
+}
+
+.jvm-iteme:focus {
+    color: var(--btn-hover) !important;
+}
+
+.nav-btne-login:hover {
+    background-color: var(--btn-hover);
+    color: var(--white);
+}
+
+.jvm-iteme {
+    font-family: "Montserrat"sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    margin-top: 5px;
+    /* letter-spacing: 0.12em; */
+    color: #222222 !important;
+}
+
+
+/*=============== Start bavbar dot style =============== */
+
+.SMN_effect-3 .profile:after {
+    position: absolute;
+    top: 80%;
+    left: 60px !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: var(--background-color);
+    content: "";
+    opacity: 0;
+}
+
+.jvm-item:hover,
+.jvm-item:focus {
+    outline: none;
+}
+
+.back {
+    padding: 50px 0 150px 0;
+}
+
+.color-3 {
+    background: #353535;
+}
+
+
+/*
+-----------------
+common style
+-----------------
+*/
+
+.menu .jvm-item {
+    color: var(--black);
+    padding: 15px 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+---------------------------------------
+hover effect 3
+---------------------------------------
+*/
+
+.SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 80%;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: var(--background-color);
+    content: "";
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.SMN_effect-3 .jvm-item:hover:after,
+.SMN_effect-3 .jvm-item:focus:after {
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* home */
+
+.SMN_effect-3 .Home:after {
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: var(--background-color);
+    content: "";
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.SMN_effect-3 .Home:hover:after,
+.SMN_effect-3 .Home:focus:after {
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* contect us */
+
+.SMN_effect-3 .contect-us:hover:after,
+.SMN_effect-3 .contect-us:focus:after {
+    top: 80%;
+    left: 55px;
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.SMN_effect-3 .post-a-job:hover:after,
+.SMN_effect-3 .post-a-job:focus:after {
+    left: 55px;
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/*=============== End bavbar dot style =============== */
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .jvm-iteme {
+        display: none;
+    }
+    .SMN_effect-3 .profile:after {
+        position: absolute;
+        top: 80%;
+    }
+    .SMN_effect-3 .contect-us:focus:after {
+        height: 8px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .SMN_effect-3 .post-a-job:hover:after {
+        height: 8px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+    .nav-btne {
+        margin-right: 58px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .jvm-iteme {
+        display: none;
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+    .nav-btne {
+        margin-right: 58px !important;
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 479px) {
+    .SMN_effect-3 .jvm-item:after {
+        display: none;
+    }
+    .nav-btne {
+        margin-right: 58px;
+    }
+    .jvm-iteme {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+    .SMN_effect-3 .jvm-item:after {
+        display: none;
+    }
+    .jvm-iteme {
+        display: none;
+    }
+    .JVM-nav {
+        padding: 0px;
+        padding-left: 0px !important;
+    }
+    .JVM-nav img {
+        width: 70%;
+    }
+    .profile-img {
+        width: 20px !important;
+    }
+    .about-d-p-w img {
+        width: 20px;
+    }
+    .SMN_effect-3 .jvm-item:after {
+        display: none;
+    }
+}
+
+
+
+
+
+/* ====================== START NAVBAR =========================== */
+
+.jvm-nav {
+    background: var(--white);
+}
+
+.JVM-nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.nav-item .jvm-item {
+    font-family: "Montserrat"sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    /* letter-spacing: 0.12em; */
+    color: #222222 !important;
+}
+
+.nav-item .jvm-item:focus {
+    color: var(--background-color) !important;
+}
+
+.nav-item .jvm-item:hover {
+    color: var(--background-color) !important;
+    transition-duration: 0s;
+}
+
+.cart {
+    width: 8px;
+    height: 5px;
+    color: var(--black);
+}
+
+.profile-img:hover {
+    color: var(--background-color) !important;
+}
+
+.nav-btne {
+    padding: 10px 18px 10px 18px;
+    background: var(--white);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 15px 0px 40px;
+    color: var(--background-color);
+}
+
+.nav-btne:focus {
+    background-color: var(--btn-focus) !important;
+    color: var(--white);
+    border: none;
+}
+
+.nav-btne:hover {
+    background-color: var(--background-color);
+    color: var(--white);
+}
+
+.nav-btne-login {
+    padding: 10px 29px 10px 29px;
+    color: var(--white);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 15px 0px 0px;
+    background-color: var(--background-color);
+}
+
+.nav-btne-login:focus {
+    background-color: var(--btn-focus) !important;
+    color: var(--white);
+    border: none;
+}
+
+.jvm-iteme:hover {
+    color: var(--btn-hover) !important;
+}
+
+.jvm-iteme:focus {
+    color: var(--btn-hover) !important;
+}
+
+.nav-btne-login:hover {
+    background-color: var(--btn-hover);
+    color: var(--white);
+}
+
+.jvm-iteme {
+    font-family: "Montserrat"sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    margin-top: 5px;
+    /* letter-spacing: 0.12em; */
+    color: #222222 !important;
+}
+
+
+/*=============== Start bavbar dot style =============== */
+
+.jvm-item:hover,
+.jvm-item:focus {
+    outline: none;
+}
+
+.back {
+    padding: 50px 0 150px 0;
+}
+
+.color-3 {
+    background: #353535;
+}
+
+
+/*
+-----------------
+common style
+-----------------
+*/
+
+.menu .jvm-item {
+    color: var(--black);
+    padding: 15px 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+---------------------------------------
+hover effect 3
+---------------------------------------
+*/
+
+.SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 80%;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: var(--background-color);
+    content: "";
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.SMN_effect-3 .jvm-item:hover:after,
+.SMN_effect-3 .jvm-item:focus:after {
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* home */
+
+.SMN_effect-3 .Home:after {
+    position: absolute;
+    top: 80%;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: var(--background-color);
+    content: "";
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.SMN_effect-3 .Home:hover:after,
+.SMN_effect-3 .Home:focus:after {
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* contect us */
+
+.SMN_effect-3 .contect-us:hover:after,
+.SMN_effect-3 .contect-us:focus:after {
+    top: 80%;
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.SMN_effect-3 .post-a-job:hover:after,
+.SMN_effect-3 .post-a-job:focus:after {
+    height: 8px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/*=============== End bavbar dot style =============== */
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .jvm-iteme {
+        display: none;
+    }
+    .SMN_effect-3 .contect-us:focus:after {
+        height: 8px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .SMN_effect-3 .post-a-job:hover:after {
+        height: 8px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+    .nav-btne {
+        margin-right: 58px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .jvm-iteme {
+        display: none;
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+    .nav-btne {
+        margin-right: 58px !important;
+    }
+    .SMN_effect-3 .jvm-item:after {
+        position: absolute;
+        top: 90%;
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 479px) {
+    .SMN_effect-3 .jvm-item:after {
+        display: none;
+    }
+    .nav-btne {
+        margin-right: 58px;
+    }
+    .jvm-iteme {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+    .SMN_effect-3 .jvm-item:after {
+        display: none;
+    }
+    .jvm-iteme {
+        display: none;
+    }
+    .JVM-nav {
+        padding: 0px;
+        padding-left: 0px !important;
+    }
+}
