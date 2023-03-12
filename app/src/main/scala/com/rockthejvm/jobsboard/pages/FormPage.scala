@@ -109,19 +109,6 @@ abstract class FormPage(title: String, status: Option[Page.Status]) extends Page
       textarea(`class` := "form-control", id := uid, onInput(onChange))("")
     )
 
-  protected def renderAuxLink(location: String, text: String): Html[App.Msg] =
-    a(
-      href    := location,
-      `class` := "aux-link",
-      onEvent(
-        "click",
-        e => {
-          e.preventDefault() // native JS - prevent reloading the page
-          Router.ChangeLocation(location)
-        }
-      )
-    )(text)
-
     /*
       check if the form has loaded (if it's present on the page)
         document.getElementById()

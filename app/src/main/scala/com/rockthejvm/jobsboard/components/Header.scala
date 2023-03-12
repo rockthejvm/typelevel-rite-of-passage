@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
 import com.rockthejvm.jobsboard.*
+import com.rockthejvm.jobsboard.components.*
 import com.rockthejvm.jobsboard.core.*
 import com.rockthejvm.jobsboard.pages.*
 
@@ -47,18 +48,18 @@ object Header {
 
   private def renderNavLinks(): List[Html[App.Msg]] = {
     val constantLinks = List(
-      renderSimpleNavLink("Jobs", Page.Urls.JOBS),
-      renderSimpleNavLink("Post Job", Page.Urls.POST_JOB)
+      Anchors.renderSimpleNavLink("Jobs", Page.Urls.JOBS),
+      Anchors.renderSimpleNavLink("Post Job", Page.Urls.POST_JOB)
     )
 
     val unauthedLinks = List(
-      renderSimpleNavLink("Login", Page.Urls.LOGIN),
-      renderSimpleNavLink("Sign Up", Page.Urls.SIGNUP)
+      Anchors.renderSimpleNavLink("Login", Page.Urls.LOGIN),
+      Anchors.renderSimpleNavLink("Sign Up", Page.Urls.SIGNUP)
     )
 
     val authedLinks = List(
-      renderSimpleNavLink("Profile", Page.Urls.PROFILE),
-      renderNavLink("Log Out", Page.Urls.HASH)(_ => Session.Logout)
+      Anchors.renderSimpleNavLink("Profile", Page.Urls.PROFILE),
+      Anchors.renderNavLink("Log Out", Page.Urls.HASH)(_ => Session.Logout)
     )
 
     constantLinks ++ (
@@ -67,21 +68,4 @@ object Header {
     )
   }
 
-  private def renderSimpleNavLink(text: String, location: String) =
-    renderNavLink(text, location)(Router.ChangeLocation(_))
-
-  private def renderNavLink(text: String, location: String)(location2msg: String => App.Msg) =
-    li(`class` := "nav-item")(
-      a(
-        href    := location,
-        `class` := "nav-link",
-        onEvent(
-          "click",
-          e => {
-            e.preventDefault() // native JS - prevent reloading the page
-            location2msg(location)
-          }
-        )
-      )(text)
-    )
 }

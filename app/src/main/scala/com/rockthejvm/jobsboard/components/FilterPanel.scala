@@ -121,7 +121,6 @@ final case class FilterPanel(
         onEvent(
           "change",
           event => {
-            // send a message to insert value as a checked value inside the groupName's Set int the map
             val checkbox = event.target.asInstanceOf[HTMLInputElement]
             UpdateValueChecked(groupName, value, checkbox.checked)
           }
