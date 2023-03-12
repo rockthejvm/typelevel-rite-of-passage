@@ -10,8 +10,13 @@ import io.circe.generic.auto.*
 import com.rockthejvm.jobsboard.domain.job.*
 import com.rockthejvm.jobsboard.*
 import com.rockthejvm.jobsboard.common.*
+import com.rockthejvm.jobsboard.components.*
 
 final case class JobListPage(
+    filterPanel: FilterPanel = FilterPanel(
+      filterAction = FilterJobs(_)
+    ),
+    jobFilter: JobFilter = JobFilter(),
     jobs: List[Job] = List(),
     canLoadMore: Boolean = true,
     status: Option[Page.Status] = Some(Page.Status("Loading", Page.StatusKind.LOADING))
@@ -19,7 +24,7 @@ final case class JobListPage(
   import JobListPage.*
 
   override def initCmd: Cmd[IO, App.Msg] =
-    Commands.getJobs()
+    filterPanel.initCmd |+| Commands.getJobs()
 
   override def update(msg: App.Msg): (Page, Cmd[IO, App.Msg]) = msg match {
     case AddJobs(list, clm) =>
@@ -27,13 +32,22 @@ final case class JobListPage(
     case SetErrorStatus(e) =>
       (setErrorStatus(e), Cmd.None)
     case LoadMoreJobs =>
-      (this, Commands.getJobs(offset = jobs.length))
+      (this, Commands.getJobs(filter = jobFilter, offset = jobs.length))
+    case FilterJobs(selectedFilters) =>
+      val newJobFilter = createJobFilter(selectedFilters)
+      (this.copy(jobs = List(), jobFilter = newJobFilter), Commands.getJobs(filter = newJobFilter))
+    case msg: FilterPanel.Msg =>
+      val (newFilterPanel, cmd) = filterPanel.update(msg)
+      (this.copy(filterPanel = newFilterPanel), cmd)
     case _ => (this, Cmd.None)
   }
 
   override def view(): Html[App.Msg] =
-    div(`class` := "jobs-container")(
-      jobs.map(renderJob) ++ maybeRenderLoadMore
+    div(`class` := "job-list-page")(
+      filterPanel.view(),
+      div(`class` := "jobs-container")(
+        jobs.map(renderJob) ++ maybeRenderLoadMore
+      )
     )
 
   /////////////////////////////////////////////////////////////////////////
@@ -73,6 +87,17 @@ final case class JobListPage(
   }
 
   // util
+  private def createJobFilter(selectedFilters: Map[String, Set[String]]) =
+    JobFilter(
+      companies = selectedFilters.get("Companies").getOrElse(Set()).toList,
+      locations = selectedFilters.get("Locations").getOrElse(Set()).toList,
+      countries = selectedFilters.get("Countries").getOrElse(Set()).toList,
+      seniorities = selectedFilters.get("Seniorities").getOrElse(Set()).toList,
+      tags = selectedFilters.get("Tags").getOrElse(Set()).toList,
+      maxSalary = Some(filterPanel.maxSalary),
+      filterPanel.remote
+    )
+
   def setErrorStatus(message: String) =
     this.copy(status = Some(Page.Status(message, Page.StatusKind.ERROR)))
   def setSuccessStatus(message: String) =
@@ -85,25 +110,19 @@ object JobListPage {
   case class SetErrorStatus(e: String)                      extends Msg
   case class AddJobs(list: List[Job], canLoadMore: Boolean) extends Msg
   // action
-  case object LoadMoreJobs extends Msg
+  case object LoadMoreJobs                                         extends Msg
+  case class FilterJobs(selectedFilters: Map[String, Set[String]]) extends Msg
 
   object Endpoints {
     def getJobs(limit: Int = Constants.defaultPageSize, offset: Int = 0) = new Endpoint[Msg] {
       override val location: String = Constants.endpoints.jobs + s"?limit=$limit&offset=$offset"
       override val method: Method   = Method.Post
       override val onError: HttpError => Msg = e => SetErrorStatus(e.toString)
-      override val onResponse: Response => Msg = response =>
-        response.status match {
-          case Status(s, _) if s >= 200 && s < 300 =>
-            val json   = response.body
-            val parsed = parse(json).flatMap(_.as[List[Job]])
-            parsed match {
-              case Left(parsingError) => SetErrorStatus(s"Parsing error: $parsingError")
-              case Right(list)        => AddJobs(list, canLoadMore = offset == 0 || !list.isEmpty)
-            }
-          case Status(code, message) if code >= 400 && code < 600 =>
-            SetErrorStatus(s"Error: $message")
-        }
+      override val onResponse: Response => Msg =
+        Endpoint.onResponse[List[Job], Msg](
+          list => AddJobs(list, canLoadMore = offset == 0 || !list.isEmpty),
+          SetErrorStatus(_)
+        )
     }
   }
 

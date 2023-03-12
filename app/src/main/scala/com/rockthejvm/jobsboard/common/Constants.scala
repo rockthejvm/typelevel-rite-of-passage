@@ -17,6 +17,7 @@ object Constants {
     val changePassword = s"$root/api/auth/users/password"
     val postJob        = s"$root/api/jobs/create"
     val jobs           = s"$root/api/jobs"
+    val filters        = s"$root/api/jobs/filters"
   }
 
   object cookies {
