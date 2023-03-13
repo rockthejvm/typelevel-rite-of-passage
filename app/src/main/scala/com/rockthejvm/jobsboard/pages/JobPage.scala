@@ -11,6 +11,7 @@ import laika.format.*
 
 import com.rockthejvm.jobsboard.*
 import com.rockthejvm.jobsboard.common.*
+import com.rockthejvm.jobsboard.components.*
 import com.rockthejvm.jobsboard.domain.job.*
 
 final case class JobPage(
@@ -51,43 +52,11 @@ final case class JobPage(
         h1(s"${job.jobInfo.company} - ${job.jobInfo.title}")
       ),
       div(`class` := "job-overview")(
-        renderJobDetails(job)
+        JobComponents.renderJobSummary(job)
       ),
       renderJobDescription(job),
       a(href := job.jobInfo.externalUrl, `class` := "job-apply-action", target := "blank")("Apply")
     )
-
-  private def renderJobDetails(job: Job) = {
-    def renderDetail(value: String) =
-      if (value.isEmpty()) div()
-      else li(`class` := "job-detail-value")(value)
-
-    val fullLocationString = job.jobInfo.country match {
-      case Some(country) => s"${job.jobInfo.location}, $country"
-      case None          => job.jobInfo.location
-    }
-
-    val currency = job.jobInfo.currency.getOrElse("")
-
-    val fullSalaryString = (job.jobInfo.salaryLo, job.jobInfo.salaryHi) match {
-      case (Some(lo), Some(hi)) =>
-        s"$currency $lo-$hi"
-      case (Some(lo), None) =>
-        s"> $currency $lo"
-      case (None, Some(hi)) =>
-        s"up to $currency $hi"
-      case _ => "unspecified salary = potentially infinite!"
-    }
-
-    div(`class` := "job-details")(
-      ul(`class` := "job-detail")(
-        renderDetail(fullLocationString),
-        renderDetail(fullSalaryString),
-        renderDetail(job.jobInfo.seniority.getOrElse("all levels")),
-        renderDetail(job.jobInfo.tags.getOrElse(List()).mkString(","))
-      )
-    )
-  }
 
   private def renderJobDescription(job: Job) = {
     val descriptionHtml = markdownTransformer.transform(job.jobInfo.description) match {

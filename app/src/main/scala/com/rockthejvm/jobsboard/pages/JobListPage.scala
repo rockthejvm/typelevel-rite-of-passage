@@ -50,7 +50,7 @@ final case class JobListPage(
             filterPanel.view()
           ),
           div(`class` := "col-lg-8")(
-            jobs.map(renderJob) ++ maybeRenderLoadMore
+            jobs.map(JobComponents.card) ++ maybeRenderLoadMore
           )
         )
       )
@@ -61,27 +61,6 @@ final case class JobListPage(
   /////////////////////////////////////////////////////////////////////////
 
   // UI
-  private def renderJob(job: Job) =
-    div(`class` := "job-card")(
-      div(`class` := "job-card-img")(
-        img(
-          `class` := "job-logo",
-          src     := job.jobInfo.image.getOrElse(""),
-          alt     := job.jobInfo.title
-        )
-      ),
-      div(`class` := "job-card-content")(
-        h4(
-          Anchors.renderSimpleNavLink(
-            s"${job.jobInfo.company} - ${job.jobInfo.title}",
-            Page.Urls.JOB(job.id.toString())
-          )
-        )
-      ),
-      div(`class` := "job-card-apply")(
-        a(href := job.jobInfo.externalUrl, target := "blank")("Apply")
-      )
-    )
 
   private def maybeRenderLoadMore: Option[Html[App.Msg]] = status.map { s =>
     div(`class` := "load-more-action")(
@@ -90,7 +69,9 @@ final case class JobListPage(
         case Page.Status(e, Page.StatusKind.ERROR)   => div(e)
         case Page.Status(_, Page.StatusKind.SUCCESS) =>
           if (canLoadMore)
-            button(`type` := "button", onClick(LoadMoreJobs))("Load more")
+            button(`type` := "button", `class` := "load-more-btn", onClick(LoadMoreJobs))(
+              "Load more"
+            )
           else
             div("All jobs loaded")
       }
