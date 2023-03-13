@@ -12,12 +12,6 @@ import com.rockthejvm.jobsboard.pages.*
 
 object Header {
 
-  // <!--  ================ START NAVBAR =================  -->
-
-  //         <li class="nav-item">
-  //             <a class="nav-link jvm-item Home active-item" href="index.html">Home</a>
-  //         </li>
-
   // public API
   def view() =
     div(`class` := "container-fluid p-0")(

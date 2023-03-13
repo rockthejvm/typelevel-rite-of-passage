@@ -1,0 +1,954 @@
+/* ======================= STAT : GOOGLE FONT CND ================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ======================= END : GOOGLE FONT CND ================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-bg-color: #f6f6f6;
+    --background-color: #f14521;
+    --white: #FFFFFF;
+    --btn-focus: #07263a;
+    --btn-hover: #ff6544;
+}
+
+*::selection {
+    color: var(--white);
+    background: var(--background-color);
+}
+
+body {
+    background: var(--body-bg-color);
+    font-family: 'Montserrat';
+}
+
+
+/* ================================= TOP CARD STYLE ============================== */
+
+.jvm-jobs-details-top-card {
+    padding: 40px 100px;
+    background: #192136;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img {
+    margin-right: 40px;
+    float: left;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px !important;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title {
+    float: left;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location img {
+    margin-right: 5px;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.09em;
+    color: var(--white);
+    margin-right: 20px;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees {
+    margin-top: 15px;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees .card-senior-details {
+    margin-right: 54px;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees .card-rupees-details {
+    font-size: 10px;
+    color: var(--background-color);
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn {
+    float: right;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button {
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 24px;
+    padding: 12px 50px !important;
+    box-shadow: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 50px;
+    gap: 10px;
+    background: var(--background-color);
+    border-radius: 135px;
+    flex: none;
+    border: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button:hover {
+    background: var(--btn-hover);
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button:focus {
+    background: var(--btn-focus);
+    box-shadow: none;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p {
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--white);
+    margin-top: 38px;
+    margin-bottom: 0px;
+}
+
+.jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--background-color);
+}
+
+
+/* ================================= TOP CARD STYLE ============================== */
+
+
+/* Rock The JVM Job Board start */
+
+.the-rock {
+    background: var(--body-bg-color);
+}
+
+.jvm-Job {
+    margin-top: 50px;
+    background: var(--white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.jvm-Job h2 {
+    padding: 30px 0px 0px 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #222222;
+}
+
+.Job-Board {
+    margin-top: 61px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.jvm-Job p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 200%;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 0.03em;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.jvm-Job ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 200%;
+    padding-left: 65px;
+    padding-right: 50px;
+    letter-spacing: 0.03em;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.jvm-Job img {
+    width: 100%;
+    height: 149px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #d9d9d9;
+}
+
+.sa-text p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 200%;
+    padding: 40px 50px 0px 50px;
+    letter-spacing: 0.03em;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.sa-text-2 p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 200%;
+    padding: 30px 50px 50px 50px;
+    letter-spacing: 0.03em;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+
+/* Rock The JVM Job Board end */
+
+.jvm-job-information {
+    padding: 30px 0px 30px 50px;
+    background: var(--white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.heading-information {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #222222;
+}
+
+.rock-befor li {
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #222222;
+}
+
+.Shifte {
+    margin-top: 30px;
+    padding-right: 0px;
+}
+
+.month {
+    color: var(--background-color);
+}
+
+.rock-li-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.rock-befor {
+    left: 33px;
+    position: relative;
+}
+
+.rock-befor:first-child::before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "1";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rock-befor:nth-child(2):before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "2";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rock-befor:nth-child(3):before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "3";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rock-befor:nth-child(4):before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "4";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rock-befor:nth-child(5):before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "5";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rock-befor:last-child:before {
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    content: "6";
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.rok-last {
+    padding: 38px 50px;
+    margin-top: 30px;
+    background: var(--white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.rock-apply {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #222222;
+    position: relative;
+    top: 10px;
+}
+
+.rock-apply-btn {
+    /* font-style: italic; */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white);
+    background: var(--background-color);
+    border-radius: 135px;
+    border: none;
+    padding: 12px 50px;
+    float: right;
+}
+
+.rock-apply-btn:hover {
+    background: var(--btn-hover);
+}
+
+.rock-apply-btn:focus {
+    background: var(--btn-focus);
+}
+
+
+/* footer start */
+
+.main {
+    /* padding: 50px; */
+    background-color: #192136;
+    width: 100%;
+}
+
+.logo img {
+    width: 226px;
+    margin-top: 60px;
+}
+
+.sidebar h4 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--background-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-2 .sidebar.ul {
+    list-style: none;
+}
+
+ol,
+ul {
+    padding-left: 1px;
+}
+
+.sidebar ul li {
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.sidebar ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white);
+    text-decoration: none !important;
+}
+
+.sidebar input {
+    width: 186px;
+    height: 35px;
+    left: 1001px;
+    top: 2177px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+
+.sidebar button {
+    width: 88px;
+    height: 35px;
+    left: 1202px;
+    top: 2177px;
+    background: linear-gradient(180deg, rgba(46, 147, 238, 0.5) 0%, rgba(241, 69, 33, 0.8) 100%);
+    box-shadow: 1px 1px 7px rgba(251, 35, 106, 0.2);
+    border-radius: 5px;
+}
+
+.sidebar button span {
+    color: var(--white);
+}
+
+.main hr {
+    background-color: var(--body-bg-color);
+    width: 100% !important;
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 15px;
+    margin-bottom: 0px;
+    color: var(--white);
+}
+
+@media (max-width: 767px) {
+    .rock-apply {
+        font-size: 18px;
+    }
+    .rock-apply-btn {
+        font-size: 18px;
+        padding: 12px 40px;
+    }
+    .rock-befor:first-child::before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "1";
+        top: 0;
+        left: -25px !important;
+        width: 25px;
+        height: 25px;
+        background: var(--background-color);
+        border-radius: 100%;
+        color: var(--white);
+    }
+    .rock-befor:nth-child(2):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "2";
+        top: 0;
+        left: -25px !important;
+        width: 25px;
+        height: 25px;
+        background: var(--background-color);
+        border-radius: 100%;
+        color: var(--white);
+    }
+    .rock-befor:nth-child(3):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "3";
+        top: 0;
+        left: -25px !important;
+        width: 25px;
+        height: 25px;
+        background: var(--background-color);
+        border-radius: 100%;
+        color: var(--white);
+    }
+    .rock-befor:nth-child(4):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "4";
+        top: 0;
+        left: -25px !important;
+        width: 25px;
+        height: 25px;
+        background: var(--background-color);
+        border-radius: 100%;
+        color: var(--white);
+    }
+    .rock-befor:nth-child(5):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "5";
+        top: 0;
+        left: -25px !important;
+        width: 25px;
+        height: 25px;
+        background: var(--background-color);
+        border-radius: 100%;
+        color: var(--white);
+    }
+    .rock-befor:last-child:before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "6";
+        top: 0;
+        left: -25px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .rock-apply {
+        font-size: 18px;
+    }
+    .rock-apply-btn {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+@media only screen and (max-width: 469px) {
+    .rock-apply {
+        font-size: 14px;
+    }
+    .rock-apply-btn {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+}
+
+@media only screen and (max-width: 423px) {
+    .jvm-job-information {
+        padding: 30px 0px 30px 26px;
+    }
+    .rok-last {
+        padding: 30px 20px;
+    }
+    .rock-apply {
+        font-size: 12px;
+    }
+    .rock-apply-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .rock-apply {
+        font-size: 12px;
+    }
+    .rock-apply-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .jvm-Job p {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .jvm-Job ul {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .sa-text-2 p {
+        padding: 15px 22px 50px 22px;
+    }
+}
+
+
+/* ========================= START : CARD MEDIA QUERY  ========================== */
+
+@media (max-width: 1200px) {
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+        font-size: 27px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button {
+        font-size: 17px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p {
+        font-size: 13px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img img {
+        width: 100px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location span {
+        font-size: 12px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees .card-senior-details {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1012px) {
+    .jvm-jobs-details-top-card {
+        padding: 35px 80px;
+        background: #192136;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .Shifte {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 769px) {
+    .Job-Board {
+        max-width: 600px !important;
+    }
+}
+
+@media (max-width: 888px) {
+    .jvm-jobs-details-top-card {
+        padding: 30px 60px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img {
+        margin-right: 25px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img img {
+        width: 90px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+        font-size: 23px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location span {
+        margin-right: 15px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees .card-senior-details {
+        margin-right: 45px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button {
+        font-size: 15px !important;
+        padding: 10px 30px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p,
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 728px) {
+    .jvm-jobs-details-top-card {
+        padding: 25px 50px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img {
+        margin-right: 20px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img img {
+        width: 80px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+        font-size: 20px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button {
+        font-size: 13px !important;
+        padding: 8px 25px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p,
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p span {
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 652px) {
+    .jvm-jobs-details-top-card {
+        padding: 20px 45px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img img {
+        width: 70px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-img {
+        margin-right: 20px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+        font-size: 17px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location span {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 477px) {
+    .jvm-jobs-details-top-card {
+        padding: 15px 25px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn {
+        margin-top: 10px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-title h1 {
+        font-size: 15px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location span {
+        font-size: 8px !important;
+        margin-right: 8px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location img {
+        margin-right: 3px;
+        width: 12px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-company-and-location .dollar-sign {
+        width: 8px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-profile-job-details-senior-and-rupees .card-senior-details {
+        margin-right: 30px;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p {
+        margin-top: 20px;
+        font-size: 10px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn button {
+        font-size: 10px !important;
+        padding: 6px 20px !important;
+    }
+    .jvm-jobs-details-top-card .jvm-jobs-details-card-apply-now-btn p span {
+        font-size: 10px !important;
+    }
+}
+
+
+/* ========================= END : CARD MEDIA QUERY  ============================ */
+
+
+/* icon */
+
+.board-socail-icon {
+    position: sticky;
+    top: 0px;
+}
+
+.board-main-icon {
+    float: right;
+    position: relative;
+    margin-bottom: 10px;
+    left: 20px;
+    top: 50px;
+}
+
+.board-main-icon li {
+    list-style-type: none;
+}
+
+.rock-box {
+    padding: 10px 20px;
+    background: var(--white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+
+/* icon end */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rok-last {
+        padding: 25px 13px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {}
+
+@media (max-width: 425px) {
+    .rock-box {
+        padding: 10px 10px;
+    }
+    .rock-apply {
+        top: 3px !important;
+    }
+    .heading-information {
+        font-size: 16px;
+    }
+    .rock-befor:first-child::before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "1";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background: var(--background-color);
+        margin-right: 10px !important;
+        font-size: 12px;
+    }
+    .rock-befor:nth-child(2):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "2";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .rock-befor:nth-child(3):before {
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "3";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background: var(--background-color);
+    }
+    .rock-befor:nth-child(4):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "4";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background: var(--background-color);
+        font-size: 12px;
+    }
+    .rock-befor:nth-child(5):before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "5";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background: var(--background-color);
+        font-size: 12px;
+    }
+    .rock-befor:last-child:before {
+        margin-top: 5px;
+        text-align: center;
+        position: absolute;
+        content: "6";
+        top: 0;
+        left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background: var(--background-color);
+        font-size: 12px;
+    }
+    .rock-befor li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .rock-li-text {
+        font-size: 13px;
+    }
+    .rok-last {
+        padding: 10px 10px;
+    }
+    .rock-apply-btn {
+        padding: 10px 15px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (min-width: 424px) and (max-width: 480px) {
+    .rock-apply-btn {
+        font-size: 14px;
+        padding: 10px 24px !important;
+    }
+    .rock-box {
+        padding: 10px 10px;
+        position: initial;
+    }
+    .rok-last {
+        padding: 20px 20px;
+    }
+    .rock-box {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    .rock-box {
+        padding: 10px 10px;
+        position: initial;
+    }
+    .rock-apply {
+        top: 3px;
+        line-height: 4px;
+    }
+    .rock-apply-btn {
+        padding: 8px 8px;
+    }
+}
