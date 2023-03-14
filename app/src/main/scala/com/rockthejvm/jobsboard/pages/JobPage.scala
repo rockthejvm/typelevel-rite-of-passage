@@ -21,15 +21,15 @@ import scala.scalajs.js.annotation.*
 @js.native
 @JSGlobal()
 class Moment extends js.Object {
-  def fromNow(): String = js.native // actually invokes the format() function in JS
-  def format(): String  = js.native // actually invokes the format() function in JS
+  def fromNow(): String = js.native
+  def format(): String  = js.native
   // surface out any JS function as a new Scala method in this class
 }
 
 @js.native
 @JSImport("moment", JSImport.Default) // run a JS import statement
 object MomentLib extends js.Object {
-  def unix(date: Long): Moment = js.native
+  def unix(seconds: Long): Moment = js.native
 }
 
 final case class JobPage(

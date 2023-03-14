@@ -7,6 +7,7 @@ import cats.effect.IO
 import org.scalajs.dom.*
 
 import com.rockthejvm.jobsboard.*
+import com.rockthejvm.jobsboard.common.*
 import com.rockthejvm.jobsboard.core.*
 import scala.concurrent.duration.FiniteDuration
 import org.scalajs.dom.HTMLInputElement
@@ -25,25 +26,38 @@ abstract class FormPage(title: String, status: Option[Page.Status]) extends Page
 
   // protected API
   protected def renderForm(): Html[App.Msg] =
-    div(`class` := "form-section")(
-      div(`class` := "top-section")(
-        h1(title)
-      ),
-      form(
-        name    := "signin",
-        `class` := "form",
-        id      := "form",
-        onEvent(
-          "submit",
-          e => {
-            e.preventDefault()
-            App.NoOp
-          }
+    div(`class` := "row")(
+      div(`class` := "col-md-5 p-0")(
+        // left
+        div(`class` := "logo")(
+          img(src   := Constants.logoImage)
         )
-      )(
-        renderFormContent()
       ),
-      status.map(s => div(s.message)).getOrElse(div())
+      div(
+        `class` := "col-md-7"
+      )(
+        // right
+        div(`class` := "form-section")(
+          div(`class` := "top-section")(
+            h1(span(title)),
+            maybeRenderErrors()
+          ),
+          form(
+            name    := "signin",
+            `class` := "form",
+            id      := "form",
+            onEvent(
+              "submit",
+              e => {
+                e.preventDefault()
+                App.NoOp
+              }
+            )
+          )(
+            renderFormContent()
+          )
+        )
+      )
     )
 
   protected def renderInput(
@@ -53,12 +67,16 @@ abstract class FormPage(title: String, status: Option[Page.Status]) extends Page
       isRequired: Boolean,
       onChange: String => App.Msg
   ) =
-    div(`class` := "form-input")(
-      label(`for` := uid, `class` := "form-label")(
-        if (isRequired) span("*") else span(),
-        text(name)
-      ),
-      input(`type` := kind, `class` := "form-control", id := uid, onInput(onChange))
+    div(`class` := "row")(
+      div(`class` := "col-md-12")(
+        div(`class` := "form-input")(
+          label(`for` := uid, `class` := "form-label")(
+            if (isRequired) span("*") else span(),
+            text(name)
+          ),
+          input(`type` := kind, `class` := "form-control", id := uid, onInput(onChange))
+        )
+      )
     )
 
   protected def renderImageUploadInput(
@@ -109,14 +127,12 @@ abstract class FormPage(title: String, status: Option[Page.Status]) extends Page
       textarea(`class` := "form-control", id := uid, onInput(onChange))("")
     )
 
-    /*
-      check if the form has loaded (if it's present on the page)
-        document.getElementById()
-      check again, while the element is null, with a space of 100 millis
-
-      use IO effects!
-     */
   // private
+  // UI
+  private def maybeRenderErrors() =
+    status.map(s => div(s.message)).getOrElse(div())
+
+  // logic
   private def clearForm() =
     Cmd.Run[IO, Unit, App.Msg] {
       def effect: IO[Option[HTMLFormElement]] = for {
