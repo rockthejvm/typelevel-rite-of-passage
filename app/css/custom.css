@@ -82,3 +82,51 @@
 	text-decoration: none;
 }
 
+.jvm-recent-jobs-card-img {
+	display: flex;
+	align-items: center;
+}
+
+/* job page */
+
+.jvm-jobs-details-card-profile-img {
+	width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--background-color);
+}
+
+.jvm-jobs-details-card-profile-title .job-detail {
+	color: white;
+}
+
+.jvm-jobs-details-card-profile-title .job-detail-icon {
+	color: var(--background-color);
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.jvm-jobs-details-top-card {
+	color: white;
+}
+
+.markdown-body {
+	font-family: Montserrat;
+	box-sizing: border-box;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 45px;
+}
+
+@media (max-width: 767px) {
+	.markdown-body {
+		padding: 15px;
+	}
+}

@@ -8,5 +8,7 @@
 		"process": "^0.11.10",
 		"sass": "^1.34.0"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"moment": "^2.29.4"
+	}
 }
