@@ -128,6 +128,11 @@
 	.markdown-body {
 		padding: 15px;
 	}
+
+	.logo {
+		min-height: 0 !important;
+		height: 0 !important;
+	}
 }
 
 /* form page */
@@ -141,8 +146,9 @@
 }
 
 .logo img {
-	position: fixed;
-	top: 50%;
+	position: sticky;
+	top: 0;
+	bottom: 0;
 	margin:auto;
 }
 
@@ -164,6 +170,34 @@
 .auth-link {
 	display: block;
 	margin: 20px 0;
+}
+
+/* post job page */
+
+textarea.form-control {
+	min-height: 200px;
+	font-family: monospace;
+}
+
+.job {
+	padding: 0 12px;
+}
+
+.job label {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.form-errors {
+	border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.top-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @keyframes animateBG {

@@ -1,0 +1,303 @@
+.jvm {
+    margin-top: 80px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.JVM-Post-A-Job-Page-Detail-Page h1 {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    margin-bottom: 0px;
+}
+
+.Upload-Company-Logo {
+    padding-top: 50px;
+}
+
+.Upload-Company-Logo span {
+    padding: 14px 10px 20px 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.Upload-Company-Logo span:hover {
+    border: 1px solid var(--background-color);
+    box-shadow: 1px 4px 21px rgba(251, 35, 106, 0.2);
+}
+
+.Upload-Company-Logo img {
+    margin-left: 66px;
+    background: #ffe7e2;
+    cursor: pointer;
+}
+
+.job {
+    padding: 0px 15px 0px 66px;
+}
+
+.job .form-switch .form-check-input {
+    outline: none !important;
+    box-shadow: none !important;
+    margin-top: 35px;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.job .form-switch .form-check-input:checked {
+    background-color: var(--background-color);
+    border: none;
+}
+
+.job .form-switch .form-check-label {
+    margin-top: 30px;
+}
+
+.job label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.jvm-job-form {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.jvm-job-form option {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.job-2 {
+    padding: 0px 66px 0px 15px;
+}
+.job-3 {
+    padding: 0px 66px 0px 15px;
+}
+
+.job-2 label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+.job-3 label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.job .form-label-2 {
+    margin-top: 30px;
+}
+
+.job-2 .form-label-2 {
+    margin-top: 30px;
+}
+
+.form-check-2 input {
+    z-index: -1;
+}
+
+.ses button {
+    margin: 100px 0px 50px 0px;
+    padding: 13px 200px;
+    gap: 10px;
+    outline: none;
+    box-shadow: none;
+    border-color: var(--background-color);
+    background: var(--background-color);
+    border-radius: 135px;
+    border: none;
+}
+
+.ses button:hover {
+    background-color: var(--btn-hover);
+}
+
+.ses button:focus {
+    background-color: var(--btn-focus);
+}
+
+.ses span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.ses {
+    padding: 0px 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .job label {
+        font-size: 16px !important;
+    }
+    .job-2 label {
+        font-size: 16px !important;
+    }
+    .job-3 label {
+        font-size: 16px !important;
+    }
+    .job .form-switch .form-check-label {
+        margin-top: 47px;
+    }
+    .job .form-switch .form-check-input {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .job {
+        padding: 0px 20px 0px 20px;
+    }
+    .job-2 {
+        padding: 0px 20px 0px 20px;
+    }
+    .job-3 {
+        padding: 0px 20px 0px 20px !important;
+    }
+    .Job-Description {
+        padding: 0px 30px;
+    }
+    .Website-Url {
+        padding: 0px 30px;
+    }
+    .ses button {
+        margin: 80px 0px 40px 0px;
+        padding: 11px 66px;
+    }
+    .Upload-Company-Logo img {
+        margin-left: 20px;
+        width: 50px;
+    }
+    .job .form-switch .form-check-label {
+        margin-top: 10px;
+    }
+    .job .form-switch .form-check-input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .job-2 .form-label-2 {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 479px) {
+    .job {
+        padding: 0px 0px 0px 0px;
+    }
+    .job-2 {
+        padding: 0px 0px 0px 0px;
+    }
+    .job-3 {
+        padding: 0px 0px 0px 0px ;
+    }
+    .Job-Description {
+        padding: 0px 10px;
+    }
+    .job label {
+        font-size: 14px;
+    }
+    .job-2 label {
+        font-size: 14px;
+    }
+    .job-3 label {
+        font-size: 14px;
+    }
+    .Website-Url {
+        padding: 0px 10px;
+    }
+    .ses button {
+        margin: 50px 0px 30px 0px;
+        padding: 11px 20px;
+    }
+    .Upload-Company-Logo img {
+        margin-left: 7px;
+    }
+    .Upload-Company-Logo span {
+        padding: 0px 0px 0px 10px;
+        font-size: 14px;
+    }
+    .Post-A-Job-text h1 {
+        padding-top: 1px;
+        font-size: 30px;
+    }
+    .Post-A-Job-text p {
+        padding-bottom: 30px;
+        font-size: 11px;
+        line-height: 0px;
+    }
+    .Upload-Company-Logo img {
+        margin-left: 0px;
+        width: 40px;
+    }
+    .JVM-Post-A-Job-Page-Detail-Page h1 {
+        font-size: 23px;
+    }
+    .Job-Description {
+        font-size: 13px;
+    }
+    .Website-Url {
+        font-size: 13px;
+    }
+    .ses span {
+        font-size: 16px;
+    }
+    .JVM-Post-A-Job-Page-Detail-Page {
+        margin-top: -30px;
+    }
+    .job-2 .form-label-2 {
+        margin-top: 0px;
+    }
+    .job .form-switch .form-check-label {
+        margin-top: 11px;
+    }
+    .job .form-switch .form-check-input {
+        margin-top: 15px;
+    }
+}
