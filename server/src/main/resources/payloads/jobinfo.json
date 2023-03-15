@@ -2,7 +2,7 @@
 	"company" : "Rock the JVM",
 	"title" : "Software Engineer",
 	"description" : "best job",
-	"externalUrl" : "rockthejvm.com",
+	"externalUrl" : "https://rockthejvm.com",
 	"remote" : false,
 	"location" : "NYC"
 }

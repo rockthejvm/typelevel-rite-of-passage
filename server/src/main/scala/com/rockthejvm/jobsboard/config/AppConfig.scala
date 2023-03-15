@@ -8,5 +8,6 @@ final case class AppConfig(
     emberConfig: EmberConfig,
     securityConfig: SecurityConfig,
     tokenConfig: TokenConfig,
-    emailServiceConfig: EmailServiceConfig
+    emailServiceConfig: EmailServiceConfig,
+    stripeConfig: StripeConfig
 ) derives ConfigReader
