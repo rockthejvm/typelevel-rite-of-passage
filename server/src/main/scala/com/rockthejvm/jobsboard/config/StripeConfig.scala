@@ -7,5 +7,6 @@ final case class StripeConfig(
     key: String,
     price: String,
     successUrl: String,
-    cancelUrl: String
+    cancelUrl: String,
+    webhookSecret: String
 ) derives ConfigReader

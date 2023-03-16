@@ -17,6 +17,7 @@ import doobie.util.fragment.Fragment
 
 import com.rockthejvm.jobsboard.domain.job
 import com.rockthejvm.jobsboard.domain.pagination
+import java.{util => ju}
 trait Jobs[F[_]] {
   // "algebra"
   // CRUD
@@ -25,6 +26,7 @@ trait Jobs[F[_]] {
   def all(filter: JobFilter, pagination: Pagination): F[List[Job]]
   def find(id: UUID): F[Option[Job]]
   def update(id: UUID, jobInfo: JobInfo): F[Option[Job]]
+  def activate(id: UUID): F[Int]
   def delete(id: UUID): F[Int]
   def possibleFilters(): F[JobFilter]
 }
@@ -200,6 +202,9 @@ class LiveJobs[F[_]: MonadCancelThrow: Logger] private (xa: Transactor[F]) exten
     """.update.run
       .transact(xa)
       .flatMap(_ => find(id)) // return the updated job
+
+  override def activate(id: UUID): F[Int] =
+    sql"UPDATE jobs SET active=true WHERE id=$id".update.run.transact(xa)
 
   override def delete(id: UUID): F[Int] =
     sql"""
