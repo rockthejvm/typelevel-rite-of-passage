@@ -59,5 +59,5 @@ INSERT INTO jobs(
 	NULL, -- image
 	'Senior', -- seniority
 	NULL, -- other
-	false -- active
+	true -- active
 );

@@ -200,6 +200,12 @@ textarea.form-control {
 	align-items: center;
 }
 
+.form-text {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @keyframes animateBG {
 	0% {
 		background-position: 0% 50%;
