@@ -42,13 +42,13 @@ object JobsPlayground extends IOApp.Simple {
       _         <- IO(println("Ready. Next...")) *> IO(StdIn.readLine)
       id        <- jobs.create("daniel@rockthejvm.com", jobInfo)
       _         <- IO(println("Next...")) *> IO(StdIn.readLine)
-      list      <- jobs.all()
+      list      <- jobs.all().compile.toList
       _         <- IO(println(s"All jobs: $list. Next...")) *> IO(StdIn.readLine)
       _         <- jobs.update(id, jobInfo.copy(title = "Software rockstar"))
       newJob    <- jobs.find(id)
       _         <- IO(println(s"New job: $newJob. Next...")) *> IO(StdIn.readLine)
       _         <- jobs.delete(id)
-      listAfter <- jobs.all()
+      listAfter <- jobs.all().compile.toList
       _         <- IO(println(s"Deleted job. List now: $listAfter. Next...")) *> IO(StdIn.readLine)
     } yield ()
   }

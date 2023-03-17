@@ -34,8 +34,6 @@ main .jvm-home-page-top-bg-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	/* TODO add hero image */
-    /* background-image: url(../static/img/home-page-top-img.png); */
 }
 
 main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {

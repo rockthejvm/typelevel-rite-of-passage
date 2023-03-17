@@ -16,18 +16,6 @@ import com.rockthejvm.jobsboard.config.*
 import com.stripe.net.Webhook
 
 trait Stripe[F[_]] {
-  /*
-    done. Someone calls an endpoint on our server
-      (send a JobInfo to us) - persisted to the DB - Jobs[F].create(...)
-    done. return a checkout page URL
-
-    3. the frontend will redirect the user to that URL - TODO on the frontend
-    4. the user pays (fills in cc details....) - handled by the user
-
-    done. the backend will be notified by Stripe (webhook)
-      - test mode: use Stripe CLI to redirect the events to localhost:4041/api/jobs/webhook..
-    done. Perform the final operation on the job advert - set the active flag to true for that job id
-   */
   def createCheckoutSession(jobId: String, userEmail: String): F[Option[Session]]
   def handleWebhookEvent[A](
       payload: String,
@@ -91,10 +79,10 @@ class LiveStripe[F[_]: MonadThrow: Logger](
           Webhook.constructEvent(
             payload,
             signature,
-            "whsec_7ea7c521abeda2d234ea2a0ea4ce918ee7e30fc679d6a0a9cc329ea984a0e5f4"
+            webhookSecret
           )
         )
-      ) // TODO pass from config
+      )
       .logError(e => "Stripe security verification failed - possibly faking attempt")
       .flatMap { event =>
         event.getType() match {

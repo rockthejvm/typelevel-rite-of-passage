@@ -4,6 +4,7 @@ import tyrian.*
 import tyrian.Html.*
 
 import com.rockthejvm.jobsboard.*
+import com.rockthejvm.jobsboard.common.*
 import com.rockthejvm.jobsboard.pages.Page
 import com.rockthejvm.jobsboard.domain.job.*
 
@@ -12,11 +13,7 @@ object JobComponents {
   def card(job: Job): Html[App.Msg] =
     div(`class` := "jvm-recent-jobs-cards")(
       div(`class` := "jvm-recent-jobs-card-img")(
-        img(
-          `class` := "img-fluid",
-          src     := job.jobInfo.image.getOrElse(""),
-          alt     := job.jobInfo.title
-        )
+        renderJobPicture(job)
       ),
       div(`class` := "jvm-recent-jobs-card-contents")(
         h5(
@@ -50,6 +47,13 @@ object JobComponents {
     div(`class` := "job-detail")(
       i(`class` := s"fa fa-$icon job-detail-icon")(),
       p(`class` := "job-detail-value")(value)
+    )
+
+  def renderJobPicture(job: Job) =
+    img(
+      `class` := "img-fluid",
+      src     := job.jobInfo.image.getOrElse(Constants.jobImagePlaceholder),
+      alt     := job.jobInfo.title
     )
 
   // private

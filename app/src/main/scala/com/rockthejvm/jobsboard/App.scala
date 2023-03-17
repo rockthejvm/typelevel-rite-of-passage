@@ -62,12 +62,24 @@ class App extends TyrianApp[App.Msg, App.Model] {
 
   // view triggered whenever model changes
   override def view(model: Model): Html[Msg] =
-    div(
+    div(`class` := "app")(
       Header.view(),
       main(
         div(`class` := "container-fluid")(
           model.page.view()
         )
-      )
+      ),
+      Footer.view()
     )
 }
+
+/*
+  - footer
+  - JobListPage hero
+  - not found page
+  - job picture with a default
+  - post job page button - styles and price
+  - render errors & success status nicely in FormPage and JobListPage
+
+  - automatic image resizing
+ */

@@ -36,7 +36,6 @@ final case class Session(email: Option[String] = None, token: Option[String] = N
         this.copy(email = None, token = None),
         Commands.clearAllSessionCookies() |+| Cmd.Emit(Router.ChangeLocation(Page.Urls.HOME))
       )
-    // TODO
   }
 
   def initCmd: Cmd[IO, Msg] = {

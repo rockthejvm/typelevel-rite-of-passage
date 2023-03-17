@@ -39,7 +39,7 @@ class JobRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (jobs: Jobs[F]
     jobs.possibleFilters().flatMap(jf => Ok(jf))
   }
 
-  // POST /jobs?limit=x&offset=y { filters } // TODO add query params and filters
+  // POST /jobs?limit=x&offset=y { filters }
   private val allJobsRoute: HttpRoutes[F] = HttpRoutes.of[F] {
     case req @ POST -> Root :? LimitQueryParam(limit) +& OffsetQueryParam(offset) =>
       for {
