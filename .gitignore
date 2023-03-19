@@ -155,3 +155,7 @@ app/dist
 
 ### Metals
 .metals/
+
+### Build files
+app/build
+build/

@@ -18,6 +18,7 @@ import doobie.util.fragment.Fragment
 import com.rockthejvm.jobsboard.domain.job
 import com.rockthejvm.jobsboard.domain.pagination
 import java.{util => ju}
+
 trait Jobs[F[_]] {
   // "algebra"
   // CRUD

@@ -72,14 +72,3 @@ class App extends TyrianApp[App.Msg, App.Model] {
       Footer.view()
     )
 }
-
-/*
-  - footer
-  - JobListPage hero
-  - not found page
-  - job picture with a default
-  - post job page button - styles and price
-  - render errors & success status nicely in FormPage and JobListPage
-
-  - automatic image resizing
- */

@@ -3,23 +3,23 @@ package com.rockthejvm.jobsboard.pages
 import tyrian.*
 import tyrian.Html.*
 import tyrian.http.*
+import tyrian.cmds.Logger
 import cats.effect.IO
 import io.circe.generic.auto.*
 import io.circe.parser.*
 import cats.syntax.traverse.*
+import scala.util.Try
+import org.scalajs.dom.File
+import org.scalajs.dom.document
+import org.scalajs.dom.FileReader
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.CanvasRenderingContext2D
 
 import com.rockthejvm.jobsboard.*
 import com.rockthejvm.jobsboard.core.*
 import com.rockthejvm.jobsboard.domain.job.*
 import com.rockthejvm.jobsboard.common.*
-import tyrian.cmds.Logger
-import org.scalajs.dom.File
-import org.scalajs.dom.document
-import org.scalajs.dom.FileReader
-import scala.util.Try
-import org.scalajs.dom.HTMLImageElement
-import org.scalajs.dom.HTMLCanvasElement
-import org.scalajs.dom.CanvasRenderingContext2D
 
 case class PostJobPage(
     company: String = "",
