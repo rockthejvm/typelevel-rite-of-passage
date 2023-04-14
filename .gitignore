@@ -159,3 +159,7 @@ app/dist
 ### Build files
 app/build
 build/
+
+### staging/prod configs
+server/src/main/resources/prod/
+server/src/main/resources/staging/

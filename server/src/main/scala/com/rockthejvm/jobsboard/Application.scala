@@ -41,7 +41,7 @@ object Application extends IOApp.Simple {
           .default[IO]
           .withHost(emberConfig.host)
           .withPort(emberConfig.port)
-          .withHttpApp(CORS(httpApi.endpoints).orNotFound) // TODO remove this when deploying
+          .withHttpApp(CORS(httpApi.endpoints).orNotFound)
           .build
       } yield server
 

@@ -64,7 +64,7 @@ case class PostJobPage(
     case UpdateImageFile(maybeFile) =>
       (this, Commands.loadFile(maybeFile))
     case UpdateImage(maybeImage) =>
-      (this.copy(image = maybeImage), Logger.consoleLog[IO]("I HAZ IMAGE: " + maybeImage))
+      (this.copy(image = maybeImage), Cmd.None)
     case UpdateTags(v) =>
       (this.copy(tags = Some(v)), Cmd.None)
     case UpdateSeniority(v) =>
@@ -76,7 +76,7 @@ case class PostJobPage(
     case AttemptPostJob =>
       (
         this,
-        Commands.postJob(promoted = true)(
+        Commands.postJob(promoted = false)(
           company,
           title,
           description,
@@ -107,20 +107,49 @@ case class PostJobPage(
       List(
         renderInput("Company", "company", "text", true, UpdateCompany(_)),
         renderInput("Title", "title", "text", true, UpdateTitle(_)),
-        renderTextArea("Description", "description", true, UpdateDescription(_)),
-        renderInput("ExternalUrl", "externalUrl", "text", true, UpdateExternalUrl(_)),
+        renderTextArea(
+          "Description - supports Markdown",
+          "description",
+          true,
+          UpdateDescription(_)
+        ),
+        renderInput(
+          "External URL - make sure it has 'http://', 'https://' or 'mailto:' for email",
+          "externalUrl",
+          "text",
+          true,
+          UpdateExternalUrl(_)
+        ),
         renderToggle("Remote", "remote", true, _ => ToggleRemote),
         renderInput("Location", "location", "text", true, UpdateLocation(_)),
-        renderInput("salaryLo", "salaryLo", "number", false, s => UpdateSalaryLo(parseNumber(s))),
-        renderInput("salaryHi", "salaryHi", "number", false, s => UpdateSalaryHi(parseNumber(s))),
+        renderInput(
+          "Salary (min)",
+          "salaryLo",
+          "number",
+          false,
+          s => UpdateSalaryLo(parseNumber(s))
+        ),
+        renderInput(
+          "Salary (max) ",
+          "salaryHi",
+          "number",
+          false,
+          s => UpdateSalaryHi(parseNumber(s))
+        ),
         renderInput("Currency", "currency", "text", false, UpdateCurrency(_)),
         renderInput("Country", "country", "text", false, UpdateCountry(_)),
         renderImageUploadInput("Logo", "logo", image, UpdateImageFile(_)),
-        renderInput("Tags", "tags", "text", false, UpdateTags(_)),
+        renderInput(
+          "Tags (e.g. technologies) - add a ',' between them",
+          "tags",
+          "text",
+          false,
+          UpdateTags(_)
+        ),
         renderInput("Seniority", "seniority", "text", false, UpdateSeniority(_)),
         renderInput("Other", "other", "text", false, UpdateOther(_)),
         button(`class` := "form-submit-btn", `type` := "button", onClick(AttemptPostJob))(
-          "Post Job - $" + Constants.jobAdvertPriceUSD
+          "Post Job"
         )
       )
 

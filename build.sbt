@@ -1,4 +1,4 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version := "1.0.0"
 
 lazy val rockthejvm    = "com.rockthejvm"
 lazy val scala3Version = "3.2.1"
@@ -106,5 +106,18 @@ lazy val stagingBuild = (project in (file("build/staging")))
     dockerExposedPorts ++= Seq(4041),
     Compile / mainClass         := Some("com.rockthejvm.jobsboard.Application"),
     Compile / resourceDirectory := ((server / Compile / resourceDirectory).value / "staging")
+  )
+  .dependsOn(server)
+
+lazy val prodBuild = (project in (file("build/prod")))
+  .enablePlugins(JavaAppPackaging, DockerPlugin)
+  .settings(
+    name            := "rockthejvm-jobsboard-prod",
+    scalaVersion    := scala3Version,
+    organization    := rockthejvm,
+    dockerBaseImage := "openjdk:11-jre-slim-buster",
+    dockerExposedPorts ++= Seq(4041),
+    Compile / mainClass         := Some("com.rockthejvm.jobsboard.Application"),
+    Compile / resourceDirectory := ((server / Compile / resourceDirectory).value / "prod")
   )
   .dependsOn(server)

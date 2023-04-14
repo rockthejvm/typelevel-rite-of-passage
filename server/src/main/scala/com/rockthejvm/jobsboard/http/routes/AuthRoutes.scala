@@ -126,6 +126,7 @@ class AuthRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (
 
   val unauthedRoutes =
     loginRoute <+> createUserRoute <+> forgotPasswordRoute <+> recoverPasswordRoute
+
   val authedRoutes = SecuredHandler[F].liftService(
     checkTokenRoute.restrictedTo(allRoles) |+|
       changePasswordRoute.restrictedTo(allRoles) |+|

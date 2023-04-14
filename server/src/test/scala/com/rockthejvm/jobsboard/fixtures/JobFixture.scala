@@ -1,6 +1,6 @@
 package com.rockthejvm.jobsboard.fixtures
 
-import cats.syntax.all._
+import cats.syntax.all.*
 import com.rockthejvm.jobsboard.domain.job.*
 
 import java.util.UUID

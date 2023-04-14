@@ -28,6 +28,7 @@ import com.rockthejvm.jobsboard.logging.syntax.*
 
 import com.rockthejvm.jobsboard.domain.job
 import com.rockthejvm.jobsboard.domain.pagination
+
 class JobRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (jobs: Jobs[F], stripe: Stripe[F])
     extends HttpValidationDsl[F] {
 
@@ -62,6 +63,7 @@ class JobRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (jobs: Jobs[F]
     req.request.validate[JobInfo] { jobInfo =>
       for {
         jobId <- jobs.create(user.email, jobInfo)
+        _     <- jobs.activate(jobId)
         resp  <- Created(jobId)
       } yield resp
     }
@@ -130,7 +132,7 @@ class JobRoutes[F[_]: Concurrent: Logger: SecuredHandler] private (jobs: Jobs[F]
 
   val unauthedRoutes = allFiltersRoute <+> allJobsRoute <+> findJobRoute <+> promotedJobWebhook
   val authedRoutes = SecuredHandler[F].liftService(
-    createJobRoute.restrictedTo(adminOnly) |+|
+    createJobRoute.restrictedTo(allRoles) |+|
       promotedJobRoute.restrictedTo(allRoles) |+|
       updateJobRoute.restrictedTo(allRoles) |+|
       deleteJobRoute.restrictedTo(allRoles)
