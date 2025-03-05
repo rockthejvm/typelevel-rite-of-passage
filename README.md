@@ -9,7 +9,7 @@ This repository contains the application we write in the course: a jobs board fo
 - full credit card checkout with Stripe checkout sessions
 - various forms of data storage and retrieval (CRUD-style)
 
-You can find a live version of the app [here](https://companies.rockthejvm.com).
+You can find a live version of the app [here](https://jobs.rockthejvm.com). For a while, some companies actually used it and hired a bunch of students from Rock the JVM.
 
 The application is built with 
 - [Cats Effect](https://typelevel.org/cats-effect) for effects
