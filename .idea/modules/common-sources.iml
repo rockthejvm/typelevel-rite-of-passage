@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="common-sources" external.linked.project.path="$MODULE_DIR$/../../common/shared" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="SHARED_SOURCES_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../common/shared/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../../common/shared/target/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../common/shared">
+      <sourceFolder url="file://$MODULE_DIR$/../../common/shared/src/main/scala" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/shared/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-3.2.1" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala3-library_3:3.2.1:jar" level="project" />
+  </component>
+</module>

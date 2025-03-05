@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="coreJVM [file:/Users/daniel/dev/rockthejvm/courses/typelevel-project/]" external.linked.project.path="$MODULE_DIR$/../../common/jvm" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/../../common/jvm/target/scala-3.2.1/classes" />
+    <output-test url="file://$MODULE_DIR$/../../common/jvm/target/scala-3.2.1/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../common/jvm">
+      <excludeFolder url="file://$MODULE_DIR$/../../common/jvm/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-3.2.1" level="project" />
+    <orderEntry type="module" module-name="common-sources" exported="" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala3-library_3:3.2.1:jar" level="project" />
+  </component>
+</module>
