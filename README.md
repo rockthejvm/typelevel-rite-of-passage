@@ -17,7 +17,6 @@ The application is built with
 - Doobie for data storage
 - http4s for HTTP server
 - other Typelevel libraries for various purposes: Circe, PureConfig, FS2, log4cats, etc
-- Flyway for migrations
 - Java mail for emails
 - Stripe for checkout
 - [Tyrian](https://tyrian.indigoengine.io/) on the frontend
